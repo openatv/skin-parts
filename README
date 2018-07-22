@@ -13,8 +13,11 @@ please use the following structure:
 (2) symbolic link:
     allScreens/skin_SKINPARTS_NAME.xml -> ../skinparts/SKINPARTS_NAME/SKINPARTS_NAME.xml
 
-All icons, fonts etc. should be put in
+All icons, fonts etc. used by the skinpart should be put in
     skinparts/SKINPARTS_NAME
+
+Anything that is not required for running the skinpart (e.g. pdf documentation) should be put in
+    otherData/SKINPARTS_NAME
 
 
 Using skinparts:
