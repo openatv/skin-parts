@@ -10,17 +10,26 @@ please use the following structure:
 (1) skinparts file for MetrixHD:
     skinparts/SKINPARTS_NAME/SKINPARTS_NAME.xml
     - MetrixHD skinparts cannot define their own colors or fonts
+    for MetrixHD skinparts, a symbolic link must be created:
+    MetrixHD/skinparts/SKINPARTS_NAME -> ../../skinparts/SKINPARTS_NAME
 
 (2) skinparts file for other skins with AtileHD support:
-    allScreens/skin_SKINPARTS_NAME.xml
+    skinparts/SKINPARTS_NAME/skin_SKINPARTS_NAME.xml
     - skinparts for other skins can define their own colors or fonts
     - please make sure not to re-define colors or fonts used in any skins
+    symbolic links are created by AtileHD in the active skin folder:
+    /usr/share/enigma2/SKIN_NAME/skinparts -> ../../skinparts
+    /usr/share/enigma2/SKIN_NAME/allScreens/skin_SKINPARTS_NAME.xml -> ../../skinparts/SKINPARTS_NAME/skin_SKINPARTS_NAME.xml
 
 All bitmaps, icons, fonts etc. used by the skinpart should be put in
     skinparts/SKINPARTS_NAME
 
 Anything that is not required for running the skinpart (e.g. pdf documentation) should be put in
     otherData/SKINPARTS_NAME
+    
+The genearted ipk file contains only the "skinparts" and "MetrixHD" folder and installs them as
+    /usr/share/enigma2/skinparts
+    /usr/share/enigma2/MetrixHD
 
 
 Using skinparts:
@@ -28,15 +37,14 @@ Using skinparts:
 
 for MetrixHD:
 
-   * copy skinparts  to /usr/share/enigma2/MetrixHD/skinparts
+   * download skinparts from feed
    
    * use the MyMetrixLite plugin for enabling skinparts (skinpart settings)
    * see also https://www.opena.tv/skins/21609-metrixhd-selbsterstellte-skinpart.html#post192960
    
 for other skins with AtileHD support (e.g. DMConcinnity-HD):
 
-   * copy skinparts  to /usr/share/enigma2/SKIN_NAME/skinparts
-   * copy allScreens to /usr/share/enigma2/SKIN_NAME/allScreens
+   * download skinparts from feed
    
    * in the "setup - SKIN_NAME" menu, activate "SKIN_NAME pro" and press yellow for enabling skinparts
    * see also https://www.opena.tv/openatv-6-1-image-rueckmeldungen/35108-skinpartunterstuetzung-im-openatv-image.html
