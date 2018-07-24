@@ -4,22 +4,17 @@ Designing skinparts:
 
 For compatibility with
    * MetrixHD
-   * other skins
+   * other skins (with AtileHD support)
 please use the following structure:
 
 (1) skinparts file for MetrixHD:
     skinparts/SKINPARTS_NAME/SKINPARTS_NAME.xml
     - MetrixHD skinparts cannot define their own colors or fonts
-    for MetrixHD skinparts, a symbolic link must be created:
-    MetrixHD/skinparts/SKINPARTS_NAME -> ../../skinparts/SKINPARTS_NAME
 
-(2) skinparts file for other skins with AtileHD support:
-    skinparts/SKINPARTS_NAME/skin_SKINPARTS_NAME.xml
+(2) skinparts file for other skins (with AtileHD support):
+    skinparts/SKINPARTS_NAME/SKINPARTS_NAME_Atile.xml
     - skinparts for other skins can define their own colors or fonts
     - please make sure not to re-define colors or fonts used in any skins
-    symbolic links are created by AtileHD in the active skin folder:
-    /usr/share/enigma2/SKIN_NAME/skinparts -> ../../skinparts
-    /usr/share/enigma2/SKIN_NAME/allScreens/skin_SKINPARTS_NAME.xml -> ../../skinparts/SKINPARTS_NAME/skin_SKINPARTS_NAME.xml
 
 All bitmaps, icons, fonts etc. used by the skinpart should be put in
     skinparts/SKINPARTS_NAME
@@ -27,10 +22,15 @@ All bitmaps, icons, fonts etc. used by the skinpart should be put in
 Anything that is not required for running the skinpart (e.g. pdf documentation) should be put in
     otherData/SKINPARTS_NAME
     
-The genearted ipk file contains only the "skinparts" and "MetrixHD" folder and installs them as
+The genearted ipk file contains only the "skinparts" folder and installs it as
     /usr/share/enigma2/skinparts
-    /usr/share/enigma2/MetrixHD
 
+For MetrixHD, MyMetrixLite creates symblic links:
+    /usr/share/enigma2/MetrixHD/skinparts/SKINPARTS_NAME -> ../../skinparts/SKINPARTS_NAME
+
+Aor other skins, AtileHD creates symblic links:
+    /usr/share/enigma2/SKIN_NAME/skinparts -> ../../skinparts
+    /usr/share/enigma2/SKIN_NAME/allScreens/skin_SKINPARTS_NAME.xml -> ../../skinparts/SKINPARTS_NAME/SKINPARTS_NAME_Atile.xml
 
 Using skinparts:
 ----------------
