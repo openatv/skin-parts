@@ -1,37 +1,43 @@
+---------------------
+Repository structure:
+---------------------
 
+MetrixHD                                          skinparts only designed for MetrixHD
+AtileHD                                           skinparts only designed for other skins (with AtileHD support)
+Universal                                         skinparts designed for MetrixHD and other skins
+|
+\_SKINPACK_NAME                                     name of a "pack" (a collection of skinparts files)
+  |
+  \_skinparts/SKINPARTS_NAME/SKINPARTS_NAME.xml        skinparts file for MetrixHD
+    skinparts/SKINPARTS_NAME/SKINPARTS_NAME_Atile.xml  skinparts file for other skins (with AtileHD support)
+    skinparts/SKINPARTS_NAME/icons		       all icons used by the skinpart
+    skinparts/SKINPARTS_NAME/fonts		       all fonts used by the skinpart
+    skinparts/SKINPARTS_NAME/....		       anything else used by the skinpart
+  |
+  \_otherData/SKINPARTS_NAME/....		       anything that is not required for running the skinpart (e.g. pdf documentation)
+
+
+skinparts_MetrixHD_SKINPACK_NAME.ipk   contains MetrixHD/SKINPACK_NAME/skinparts
+skinparts_AtileHD_SKINPACK_NAME.ipk    contains AtileHD/SKINPACK_NAME/skinparts
+skinparts_Universal_SKINPACK_NAME.ipk  contains Universal/SKINPACK_NAME/skinparts
+
+All ipk files contain only a "skinparts" folder and install its contents into
+    /usr/share/enigma2/skinparts
+
+
+--------------------
 Designing skinparts:
 --------------------
-
-For compatibility with
-   * MetrixHD
-   * other skins (with AtileHD support)
-please use the following structure:
-
-(1) skinparts file for MetrixHD:
-    skinparts/SKINPARTS_NAME/SKINPARTS_NAME.xml
+  
+(1) skinparts for MetrixHD:
     - MetrixHD skinparts cannot define their own colors or fonts
 
-(2) skinparts file for other skins (with AtileHD support):
-    skinparts/SKINPARTS_NAME/SKINPARTS_NAME_Atile.xml
+(2) skinparts for other skins (with AtileHD support):
     - skinparts for other skins can define their own colors or fonts
     - please make sure not to re-define colors or fonts used in any skins
 
-All bitmaps, icons, fonts etc. used by the skinpart should be put in
-    skinparts/SKINPARTS_NAME
 
-Anything that is not required for running the skinpart (e.g. pdf documentation) should be put in
-    otherData/SKINPARTS_NAME
-    
-The genearted ipk file contains only the "skinparts" folder and installs it as
-    /usr/share/enigma2/skinparts
-
-For MetrixHD, MyMetrixLite creates symblic links per file:
-    /usr/share/enigma2/MetrixHD/skinparts/SKINPARTS_NAME/(file) -> ../../skinparts/SKINPARTS_NAME/(file)
-
-Aor other skins, AtileHD creates symblic links:
-    /usr/share/enigma2/SKIN_NAME/skinparts -> ../../skinparts
-    /usr/share/enigma2/SKIN_NAME/allScreens/skin_SKINPARTS_NAME.xml -> ../../skinparts/SKINPARTS_NAME/SKINPARTS_NAME_Atile.xml
-
+----------------
 Using skinparts:
 ----------------
 
@@ -48,3 +54,17 @@ for other skins with AtileHD support (e.g. DMConcinnity-HD):
    
    * in the "setup - SKIN_NAME" menu, activate "SKIN_NAME pro" and press yellow for enabling skinparts
    * see also https://www.opena.tv/openatv-6-1-image-rueckmeldungen/35108-skinpartunterstuetzung-im-openatv-image.html
+
+
+--------------------
+The magic behind it:
+--------------------
+
+For MetrixHD, MyMetrixLite creates symblic links per file:
+    /usr/share/enigma2/MetrixHD/skinparts/SKINPARTS_NAME/(file) -> ../../skinparts/SKINPARTS_NAME/(file)
+
+For other skins, AtileHD creates symblic links:
+    /usr/share/enigma2/SKIN_NAME/skinparts -> ../../skinparts
+    /usr/share/enigma2/SKIN_NAME/allScreens/skin_SKINPARTS_NAME.xml -> ../../skinparts/SKINPARTS_NAME/SKINPARTS_NAME_Atile.xml
+
+
