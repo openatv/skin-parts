@@ -2,20 +2,21 @@
 Repository structure:
 ---------------------
 
-MetrixHD                                          skinparts only designed for MetrixHD
-AtileHD                                           skinparts only designed for other skins (with AtileHD support)
-Universal                                         skinparts designed for MetrixHD and other skins
+MetrixHD                                            skinparts only designed for MetrixHD
+AtileHD                                             skinparts only designed for other skins (with AtileHD support)
+Universal                                           skinparts designed for MetrixHD and other skins
 |
-\_SKINPACK_NAME                                     name of a "pack" (a collection of skinparts files)
+\_SKINPACK_NAME                                       name of a "pack" (a collection of skinparts files)
   |
-  \_skinparts/SKINPARTS_NAME/SKINPARTS_NAME.xml        skinparts file for MetrixHD
-    skinparts/SKINPARTS_NAME/SKINPARTS_NAME_Atile.xml  skinparts file for other skins (with AtileHD support)
-    skinparts/SKINPARTS_NAME/icons		       all icons used by the skinpart
-    skinparts/SKINPARTS_NAME/fonts		       all fonts used by the skinpart
-    skinparts/SKINPARTS_NAME/....		       anything else used by the skinpart
+  \_skinparts/SKINPARTS_NAME1/SKINPARTS_NAME1.xml        skinparts file for MetrixHD
+  | skinparts/SKINPARTS_NAME1/SKINPARTS_NAME1_Atile.xml  skinparts file for other skins (with AtileHD support)
+  | skinparts/SKINPARTS_NAME1/icons                      all icons used by the skinpart
+  | skinparts/SKINPARTS_NAME1/fonts                      all fonts used by the skinpart
+  | skinparts/SKINPARTS_NAME1/....                       anything else used by the skinpart
   |
-  \_otherData/SKINPARTS_NAME/....		       anything that is not required for running the skinpart (e.g. pdf documentation)
-
+  \_skinparts/SKINPARTS_NAME2                            another skinpart file (part of the same "pack")
+  |
+  \_otherData/SKINPARTS_NAME1/....                       anything that is not required for running the skinpart (e.g. pdf documentation)
 
 skinparts_MetrixHD_SKINPACK_NAME.ipk   contains MetrixHD/SKINPACK_NAME/skinparts
 skinparts_AtileHD_SKINPACK_NAME.ipk    contains AtileHD/SKINPACK_NAME/skinparts
@@ -28,11 +29,13 @@ All ipk files contain only a "skinparts" folder and install its contents into
 --------------------
 Designing skinparts:
 --------------------
+
+each skinparts file may contain several screens - use one file if the screens belong together
   
-(1) skinparts for MetrixHD:
+skinparts for MetrixHD:
     - MetrixHD skinparts cannot define their own colors or fonts
 
-(2) skinparts for other skins (with AtileHD support):
+skinparts for other skins (with AtileHD support):
     - skinparts for other skins can define their own colors or fonts
     - please make sure not to re-define colors or fonts used in any skins
 
