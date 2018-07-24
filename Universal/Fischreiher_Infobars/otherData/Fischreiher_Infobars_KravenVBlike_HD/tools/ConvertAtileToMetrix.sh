@@ -15,4 +15,16 @@ cat ../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars
 | perl -0777 -pe 's|\ *<fonts>.*</fonts>\ *\n||igs' \
 | perl -0777 -pe 's|\ *<parameters>.*</parameters>\ *\n||igs' \
 \
- > ../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_HD.xml 
+ > ../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_HD.xml
+
+ 
+./skin_scale.pl 1280x720 1920x1080 auto \
+../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_HD.xml \
+../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_FHD.xml
+
+
+sed -r -i 's|screen\s+name=\"([A-Za-z0-9\_]+)\"|screen\ name=\"\1#_FHDscreen\"|g' \
+../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_FHD.xml
+
+sed -r -i 's|/icons/|/icons_FHD/|g' \
+../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_FHD.xml
