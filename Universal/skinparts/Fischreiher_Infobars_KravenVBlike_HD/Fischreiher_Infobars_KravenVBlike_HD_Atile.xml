@@ -30,7 +30,7 @@
     <color name="KravenProgress" value="#00C3461B" />
   </colors>
   <fonts>
-    <font filename="skinparts/Kraven_Fischmod_Infobars_HD/fonts/OpenSans-Regular.ttf" name="KravenVBRegular" scale="95" />
+    <font filename="skinparts/Fischreiher_Infobars_KravenVBlike_HD/fonts/OpenSans-Regular.ttf" name="KravenVBRegular" scale="95" />
   </fonts>
   <parameters>
     <parameter name="PlayListIcon" value="30,17,8,8"/>  
@@ -45,12 +45,12 @@
 		#description#Die Infoleiste für live TV
 		#previewfile#preview/Kraven_Fischmod_InfoBar.jpg
 /-->
-    <ePixmap pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/backg.png" position="0,0" size="1280,720" zPosition="-9" />
-    <ePixmap pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/ibar.png" position="0,470" size="1280,310" zPosition="-9" alphatest="blend" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/backg.png" position="0,0" size="1280,720" zPosition="-9" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/ibar.png" position="0,470" size="1280,310" zPosition="-9" alphatest="blend" />
 
     <!-- REC -->
-    <ePixmap position="1185,685" size="49,20" zPosition="1" pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/ico_rec_off.png" alphatest="blend" />
-    <widget source="session.RecordState" render="Pixmap" position="1185,685" size="49,20" zPosition="2" pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/ico_rec_on.png" alphatest="blend">
+    <ePixmap position="1185,685" size="49,20" zPosition="1" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/ico_rec_off.png" alphatest="blend" />
+    <widget source="session.RecordState" render="Pixmap" position="1185,685" size="49,20" zPosition="2" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/ico_rec_on.png" alphatest="blend">
       <convert type="ConditionalShowHide" />
       <!-- <convert type="ConditionalShowHide">Blink</convert> -->
     </widget>
@@ -84,7 +84,7 @@
 <!--<widget source="session.CurrentService" render="PiconBg" position="150,642" size=" 100,60" transparent="0" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget> -->
-    <ePixmap pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/Picon_bg.png" position="150,642" size="100,60" zPosition="-8" transparent="0" alphatest="blend"/>
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Picon_bg.png" position="150,642" size="100,60" zPosition="-8" transparent="0" alphatest="blend"/>
     <widget source="session.CurrentService" render="Picon" position="150,642" size="100,60" transparent="0" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
@@ -109,7 +109,7 @@
 
     <!-- Progress -->
     <eLabel position="273,670" size="746,1" backgroundColor="KravenLine" />
-    <widget position="273,668" render="Progress" size="746,5" source="session.Event_Now" transparent="1" zPosition="7" foregroundColor="KravenProgress" pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/progress749.png">
+    <widget position="273,668" render="Progress" size="746,5" source="session.Event_Now" transparent="1" zPosition="7" foregroundColor="KravenProgress" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/progress749.png">
       <convert type="EventTime">Progress</convert>
     </widget>
     
@@ -206,16 +206,16 @@
 		#description#Infoleiste bei Film-Wiedergabe im EnhancedMovieCenter 
 		#previewfile#preview/Kraven_Fischmod_EMCMediaCenter.jpg
 /-->
-    <ePixmap pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/backg.png" position="0,0" size="1280,720" zPosition="-9" />
-    <ePixmap pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/ibar_mp.png" position="0,470" size="1280,310" zPosition="-9" alphatest="blend" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/backg.png" position="0,0" size="1280,720" zPosition="-9" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/ibar_mp.png" position="0,470" size="1280,310" zPosition="-9" alphatest="blend" />
 
     <!-- Progress -->
     <!-- <eLabel position="30,665" size="1080,1" backgroundColor="KravenLine" /> -->
-    <ePixmap position="30,664" zPosition="2" size="1080,8" pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/progress_bg.png" transparent="0" alphatest="blend"/>
-    <widget source="Service" render="Progress" position="30,664" size="1080,8" zPosition="4" pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/progress_rec.png" transparent="1">
+    <ePixmap position="30,664" zPosition="2" size="1080,8" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/progress_bg.png" transparent="0" alphatest="blend"/>
+    <widget source="Service" render="Progress" position="30,664" size="1080,8" zPosition="4" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/progress_rec.png" transparent="1">
       <convert type="EMCRecordPosition">Position</convert>
     </widget>
-    <widget source="Service" render="Progress" position="30,664" size="1080,8" zPosition="5" pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/progress.png" transparent="1">
+    <widget source="Service" render="Progress" position="30,664" size="1080,8" zPosition="5" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/progress.png" transparent="1">
       <convert type="EMCServicePosition">Position</convert>
     </widget>
     <widget source="Service" render="EMCPositionGauge" position="30,663" size="1080,10" zPosition="6" transparent="1">
@@ -282,8 +282,8 @@
 		#description#Wiedergabe-Statussymbole
 		#previewfile#preview/Kraven_Fischmod_PVRState.png
 /-->
-    <ePixmap pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_ico_frame_lighter.png" position="0,0" size="72,24" zPosition="1" />
-    <widget name="statusicon" position="0,0" zPosition="2" size="72,24" alphatest="on" pixmaps="skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_play.png,skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_pause.png,skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_stop.png,skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_forward.png,skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_backward.png,skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_slow.png"/>
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_ico_frame_lighter.png" position="0,0" size="72,24" zPosition="1" />
+    <widget name="statusicon" position="0,0" zPosition="2" size="72,24" alphatest="on" pixmaps="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_play.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_pause.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_stop.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_forward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_backward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_slow.png"/>
     <widget name="speed" position="0,1" size="42,20" font="KravenVBRegular;22" halign="center" valign="center" foregroundColor="KravenIBFont2" backgroundColor="black" transparent="1" zPosition="3"/>
   </screen>
 
@@ -311,13 +311,13 @@
 		#description#Timeshift Infoleiste (oben)
 		#previewfile#preview/Kraven_Fischmod_TimeshiftState.jpg
 /-->
-    <ePixmap pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/backg.png" position="0,0" size="1280,170" zPosition="-9" />
-    <ePixmap pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/shift_wide.png" position="0,0" size="1280,170" zPosition="-9" alphatest="blend"/>
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/backg.png" position="0,0" size="1280,170" zPosition="-9" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/shift_wide.png" position="0,0" size="1280,170" zPosition="-9" alphatest="blend"/>
 
     <!-- Progress -->
     <!-- <eLabel position="100,45" size="1080,1" backgroundColor="KravenLine" /> -->
-    <ePixmap position="100,44" zPosition="2" size="1080,8" pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/progress_bg.png" transparent="0" alphatest="blend"/>
-    <widget source="session.CurrentService" render="Progress" position="100,44" size="1080,8" zPosition="5" pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/progress.png" transparent="1">
+    <ePixmap position="100,44" zPosition="2" size="1080,8" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/progress_bg.png" transparent="0" alphatest="blend"/>
+    <widget source="session.CurrentService" render="Progress" position="100,44" size="1080,8" zPosition="5" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/progress.png" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
     <!-- <widget name="PTSSeekPointer" position="100,40" size="19,20" pixmap="position_pointer2.png" alphatest="on" zPosition="4" /> -->
@@ -338,8 +338,8 @@
     <widget name="eventname" font="KravenVBRegular;30" foregroundColor="KravenIBFont1" halign="left" noWrap="1" position="200,6" size="910,36" backgroundColor="black" transparent="1"/>
 
     <!-- play/pause statusicon -->
-    <ePixmap pixmap="skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_ico_frame_lighter.png" position="604,56" size="72,24" zPosition="1" />
-    <widget name="statusicon" position="604,56" zPosition="2" size="72,24" alphatest="on" pixmaps="skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_play.png,skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_pause.png,skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_stop.png,skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_forward.png,skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_backward.png,skinparts/Kraven_Fischmod_Infobars_HD/icons/Fisch_sym_slow.png"/>
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_ico_frame_lighter.png" position="604,56" size="72,24" zPosition="1" />
+    <widget name="statusicon" position="604,56" zPosition="2" size="72,24" alphatest="on" pixmaps="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_play.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_pause.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_stop.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_forward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_backward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons/Fisch_sym_slow.png"/>
     <widget name="speed" position="604,57" size="42,20" font="KravenVBRegular;22" halign="center" valign="center" foregroundColor="KravenIBFont2" backgroundColor="black" transparent="1" zPosition="3"/>
   </screen>
   

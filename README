@@ -25,8 +25,8 @@ Anything that is not required for running the skinpart (e.g. pdf documentation) 
 The genearted ipk file contains only the "skinparts" folder and installs it as
     /usr/share/enigma2/skinparts
 
-For MetrixHD, MyMetrixLite creates symblic links:
-    /usr/share/enigma2/MetrixHD/skinparts/SKINPARTS_NAME -> ../../skinparts/SKINPARTS_NAME
+For MetrixHD, MyMetrixLite creates symblic links per file:
+    /usr/share/enigma2/MetrixHD/skinparts/SKINPARTS_NAME/(file) -> ../../skinparts/SKINPARTS_NAME/(file)
 
 Aor other skins, AtileHD creates symblic links:
     /usr/share/enigma2/SKIN_NAME/skinparts -> ../../skinparts

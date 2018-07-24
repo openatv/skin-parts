@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cat ../../../allScreens/skin_Kraven_Fischmod_Infobars_HD.xml \
+cat ../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_HD_Atile.xml \
 \
 | sed -e "s|\"KravenIBbg\"|\"black\"|g" \
 | sed -e "s|\"KravenIBFont1\"|\"white\"|g" \
@@ -15,4 +15,4 @@ cat ../../../allScreens/skin_Kraven_Fischmod_Infobars_HD.xml \
 | perl -0777 -pe 's|\ *<fonts>.*</fonts>\ *\n||igs' \
 | perl -0777 -pe 's|\ *<parameters>.*</parameters>\ *\n||igs' \
 \
- > ../../../skinparts/Kraven_Fischmod_Infobars_HD/Kraven_Fischmod_Infobars_HD.xml 
+ > ../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_HD.xml 
