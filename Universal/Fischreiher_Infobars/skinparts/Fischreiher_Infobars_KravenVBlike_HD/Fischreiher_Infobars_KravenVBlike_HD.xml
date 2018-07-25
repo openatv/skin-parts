@@ -1,5 +1,5 @@
-<skin>
 <!-- cf#_#begin -->
+<skin>
 <!--
 	#description#- Infobar Skinparts by Fischreiher -
 	#description#  heavily inspired by KravenVB
@@ -11,9 +11,9 @@
 <!-- ============================================================================================================================== -->
 <!-- ==== HD section                                                                                                            === -->
 <!-- ============================================================================================================================== -->
-<!-- cf#_#rename -->
 
   <!-- KravenVB InfoBar Fischreiher Mod -->
+<!-- cf#_#rename -->
   <screen name="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar">
 <!--
 		#description#Infobar for live TV
@@ -175,6 +175,7 @@
 <!-- ============================================================================================================================== -->
 
   <!-- KravenVB-like EMC InfoBar Fischreiher Mod -->
+<!-- cf#_#rename -->
   <screen name="EMCMediaCenter" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar">
 <!--
 		#description#EMC InfoBar
@@ -251,6 +252,7 @@
 <!-- ============================================================================================================================== -->
 
   <!-- MOD - from https://github.com/oe-alliance/oe-alliance-e2-skindefault/blob/master/skin_default.xml#L2078 -->
+<!-- cf#_#rename -->
   <screen name="PVRState" position="604,682" zPosition="1" size="72,24" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
 <!--
 		#description#PVR State Icons (play, pause, ...)
@@ -268,6 +270,7 @@
   <!--						  config.plugins.SpecialJump.bar_x=273   -->
   <!--						  config.plugins.SpecialJump.bar_y=674   -->
 
+<!-- cf#_#rename -->
   <screen name="SpecialJump_SpecialJumpInfoBar" title="SpecialJump InfoBar" position="7777,7777" size="755,36" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
 <!--
 		#description#SpecialJump InfoBar (just the jump time)
@@ -280,6 +283,7 @@
 <!-- ============================================================================================================================== -->
 
   <!-- KravenVB TimeshiftState Fischreiher Mod -->
+<!-- cf#_#rename -->
   <screen name="TimeshiftState" position="0,0" size="1280,170" title="TimeshiftState" flags="wfNoBorder">
 <!--
 		#description#Timeshift Infobar (on top)
@@ -318,7 +322,6 @@
     <widget name="speed" position="604,57" size="42,20" font="Regular;22" halign="center" valign="center" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1" zPosition="3"/>
   </screen>
   
-<!-- cf#_#begin -->
 <!--
 	#description#- Infobar Skinparts by Fischreiher -
 	#description#  heavily inspired by KravenVB
@@ -330,9 +333,9 @@
 <!-- ============================================================================================================================== -->
 <!-- ==== FHD section                                                                                                           === -->
 <!-- ============================================================================================================================== -->
-<!-- cf#_#rename -->
 
   <!-- KravenVB InfoBar Fischreiher Mod -->
+<!-- cf#_#rename -->
   <screen name="InfoBar#_FHDscreen" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
 <!--
 		#description#Infobar for live TV
@@ -494,6 +497,7 @@
 <!-- ============================================================================================================================== -->
 
   <!-- KravenVB-like EMC InfoBar Fischreiher Mod -->
+<!-- cf#_#rename -->
   <screen name="EMCMediaCenter#_FHDscreen" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
 <!--
 		#description#EMC InfoBar
@@ -570,6 +574,7 @@
 <!-- ============================================================================================================================== -->
 
   <!-- MOD - from https://github.com/oe-alliance/oe-alliance-e2-skindefault/blob/master/skin_default.xml#L2078 -->
+<!-- cf#_#rename -->
   <screen name="PVRState#_FHDscreen" position="906,1023" zPosition="1" size="108,36" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
 <!--
 		#description#PVR State Icons (play, pause, ...)
@@ -587,6 +592,7 @@
   <!--						  config.plugins.SpecialJump.bar_x=273   -->
   <!--						  config.plugins.SpecialJump.bar_y=674   -->
 
+<!-- cf#_#rename -->
   <screen name="SpecialJump_SpecialJumpInfoBar#_FHDscreen" title="SpecialJump InfoBar" position="11666,11666" size="1133,54" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
 <!--
 		#description#SpecialJump InfoBar (just the jump time)
@@ -599,6 +605,7 @@
 <!-- ============================================================================================================================== -->
 
   <!-- KravenVB TimeshiftState Fischreiher Mod -->
+<!-- cf#_#rename -->
   <screen name="TimeshiftState#_FHDscreen" position="0,0" size="1920,255" title="TimeshiftState" flags="wfNoBorder">
 <!--
 		#description#Timeshift Infobar (on top)
@@ -637,4 +644,5 @@
     <widget name="speed" position="906,86" size="63,30" font="Regular;33" halign="center" valign="center" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1" zPosition="3"/>
   </screen>
   
+<!-- cf#_#begin -->
 </skin>

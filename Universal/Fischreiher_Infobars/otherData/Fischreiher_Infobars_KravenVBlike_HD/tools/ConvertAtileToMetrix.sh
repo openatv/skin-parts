@@ -29,7 +29,9 @@ sed -r -i 's|screen\s+name=\"([A-Za-z0-9\_]+)\"|screen\ name=\"\1#_FHDscreen\"|g
 sed -r -i 's|/icons_HD/|/icons_FHD/|g'     $file_Atile_HD.part_FHD
 sed -r -i 's|HD\s+section\s|FHD section|g' $file_Atile_HD.part_FHD
 
-echo "<skin>"                > $file_Metrix_HD
+echo "<!-- cf#_#begin -->"  > $file_Metrix_HD
+echo "<skin>"               >> $file_Metrix_HD
 cat $file_Atile_HD.part_HD  >> $file_Metrix_HD
 cat $file_Atile_HD.part_FHD >> $file_Metrix_HD
+echo "<!-- cf#_#begin -->"  >> $file_Metrix_HD
 echo "</skin>"              >> $file_Metrix_HD

@@ -7,3 +7,8 @@
 rm -rf ~/R/usr/share/enigma2/skinparts
 
 cp -ar ../../../skinparts  ~/R/usr/share/enigma2
+
+#rsync --del -va ../../../skinparts  ~/R/usr/share/enigma2
+
+#cp -ar ../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_HD*  ~/R/usr/share/enigma2/skinparts/Fischreiher_Infobars_KravenVBlike_HD/
+
