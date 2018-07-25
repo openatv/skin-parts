@@ -48,7 +48,7 @@
 		#previewfile#preview/Kraven_Fischmod_InfoBar.jpg
 /-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/backg.png" position="0,0" size="1280,720" zPosition="-9" />
-    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/ibar.png" position="0,470" size="1280,310" zPosition="-9" alphatest="blend" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/ibar.png" position="0,470" size="1280,310" zPosition="-9" alphatest="on" />
 
     <!-- REC -->
     <ePixmap position="1185,685" size="49,20" zPosition="1" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/ico_rec_off.png" alphatest="blend" />
@@ -210,7 +210,7 @@
 		#previewfile#preview/Kraven_Fischmod_EMCMediaCenter.jpg
 /-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/backg.png" position="0,0" size="1280,720" zPosition="-9" />
-    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/ibar_mp.png" position="0,470" size="1280,310" zPosition="-9" alphatest="blend" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/ibar_mp.png" position="0,470" size="1280,310" zPosition="-9" alphatest="on" />
 
     <!-- Progress -->
     <!-- <eLabel position="30,665" size="1080,1" backgroundColor="KravenLine" /> -->
@@ -318,7 +318,7 @@
 		#previewfile#preview/Kraven_Fischmod_TimeshiftState.jpg
 /-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/backg.png" position="0,0" size="1280,170" zPosition="-9" />
-    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/shift_wide.png" position="0,0" size="1280,170" zPosition="-9" alphatest="blend"/>
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/shift_wide.png" position="0,0" size="1280,170" zPosition="-9" alphatest="on"/>
 
     <!-- Progress -->
     <!-- <eLabel position="100,45" size="1080,1" backgroundColor="KravenLine" /> -->
