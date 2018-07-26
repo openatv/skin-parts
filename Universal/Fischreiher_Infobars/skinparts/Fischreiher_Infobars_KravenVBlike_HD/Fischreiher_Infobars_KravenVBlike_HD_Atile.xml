@@ -6,21 +6,13 @@
 	#description#  thanks to all contributors
 	#previewfile#preview/Kraven_Fischmod_EMCMediaCenter.jpg
 /-->
-  <output id="0">
-    <resolution xres="1280" yres="720" bpp="32" />
-  </output>
   <colors>
-    <color name="background" value="#00444444" />
     <color name="black" value="#00000000" />
     <color name="blue" value="#0041b1ec" />
-    <color name="dark" value="#00294a6b" />
-    <color name="darkblue" value="#0033337b" />
-    <color name="darkgrey" value="#00777777" />
     <color name="green" value="#00389416" />
     <color name="grey" value="#00aaaaaa" />
     <color name="red" value="#00f23d21" />
     <color name="transparent" value="#ffffffff" />
-    <color name="white" value="#00ffffff" />
     <color name="yellow" value="#00e5b243" />
     <color name="KravenIBbg" value="#00000000" />
     <color name="KravenIBFont1" value="#00ffffff" />
@@ -31,9 +23,6 @@
   <fonts>
     <font filename="skinparts/Fischreiher_Infobars_KravenVBlike_HD/fonts/OpenSans-Regular.ttf" name="KravenVBRegular" scale="95" />
   </fonts>
-  <parameters>
-    <parameter name="PlayListIcon" value="30,17,8,8"/>  
-  </parameters>
 
 <!-- ============================================================================================================================== -->
 <!-- ==== HD section                                                                                                            === -->
