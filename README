@@ -38,6 +38,7 @@ skinparts for MetrixHD:
 skinparts for other skins (with AtileHD support):
     - skinparts for other skins can define their own colors or fonts
     - please make sure not to re-define colors or fonts used in any skins
+    - don't specify the resolution: this would affect screens of the main skin
 
 
 ----------------
