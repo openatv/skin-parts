@@ -1,0 +1,648 @@
+<!-- cf#_#begin -->
+<skin>
+<!--
+	#description#- Infobar Skinparts by Fischreiher -
+	#description#  heavily inspired by KravenVB
+	#description#  slightly inspired by DMConcinnity-HD
+	#description#  thanks to all contributors
+	#previewfile#preview/Kraven_Fischmod_EMCMediaCenter.jpg
+/-->
+
+<!-- ============================================================================================================================== -->
+<!-- ==== HD section                                                                                                            === -->
+<!-- ============================================================================================================================== -->
+
+  <!-- KravenVB InfoBar Fischreiher Mod -->
+<!-- cf#_#rename -->
+  <screen name="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar">
+<!--
+		#description#Infobar for live TV
+		#description#Die Infoleiste für live TV
+		#previewfile#preview/Kraven_Fischmod_InfoBar.jpg
+/-->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/backg.png" position="0,0" size="1280,720" zPosition="-9" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/ibar.png" position="0,470" size="1280,310" zPosition="-9" alphatest="on" />
+
+    <!-- REC -->
+    <ePixmap position="1185,685" size="49,20" zPosition="1" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/ico_rec_off.png" alphatest="blend" />
+    <widget source="session.RecordState" render="Pixmap" position="1185,685" size="49,20" zPosition="2" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/ico_rec_on.png" alphatest="blend">
+      <convert type="ConditionalShowHide" />
+      <!-- <convert type="ConditionalShowHide">Blink</convert> -->
+    </widget>
+
+    <!-- Channel -->
+    <widget source="session.CurrentService" render="ChannelNumber" position="20,595" size="109,45" font="Regular;36" valign="bottom" halign="left" backgroundColor="black" transparent="1" zPosition="3" />
+    <widget source="session.CurrentService" render="Label" position="75,595" size="400,45" font="Regular;32" valign="bottom" halign="left" noWrap="1" backgroundColor="black" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+
+    <!-- Clock -->
+    <widget backgroundColor="black" font="Regular; 43" foregroundColor="white" halign="center" position="1064,600" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular; 43" foregroundColor="white" halign="center" position="1120,600" size="15,80" text=":" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular; 43" foregroundColor="white" halign="center" position="1129,600" render="Label" size="65,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular; 32" foregroundColor="white" halign="center" position="1184,614" size="15,60" text=":" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular; 32" foregroundColor="white" halign="center" position="1193,614" render="Label" size="50,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular; 18" foregroundColor="#00F8CA8C" halign="center" position="1029,679" render="Label" size="203,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular; 18" foregroundColor="#00F8CA8C" halign="center" position="1029,659" render="Label" size="203,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+
+    <!-- Picon -->
+<!--<widget source="session.CurrentService" render="PiconBg" position="150,642" size=" 100,60" transparent="0" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget> -->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Picon_bg.png" position="150,642" size="100,60" zPosition="-8" transparent="0" alphatest="blend"/>
+    <widget source="session.CurrentService" render="Picon" position="150,642" size="100,60" transparent="0" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    
+    <!-- Event_Now -->
+    <widget font="Regular;30" foregroundColor="white" halign="left" noWrap="1" position="415,627" render="Label"                                                                                                                      size="505,40" source="session.Event_Now" backgroundColor="black" transparent="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;22" foregroundColor="white" halign="right" position="914,633" render="Label" size="107,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;22" foregroundColor="white" halign="left" noWrap="1" position="273,633" render="Label" size="60,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;20" foregroundColor="white" halign="center" noWrap="1" position="327,633" size="10,35" text="-" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular;22" foregroundColor="white" halign="right" noWrap="1" position="331,633" render="Label" size="60,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+
+    <!-- Progress -->
+    <eLabel position="273,670" size="746,1" backgroundColor="white" />
+    <widget position="273,668" render="Progress" size="746,5" source="session.Event_Now" transparent="1" zPosition="7" foregroundColor="#00C3461B" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/progress749.png">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    
+    <!-- Event_Next -->
+    <widget font="Regular;30" foregroundColor="#00F8CA8C" halign="left" position="415,671" noWrap="1" render="Label"                                                                                                           size="505,40" source="session.Event_Next" valign="top" backgroundColor="black" transparent="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;22" foregroundColor="#00F8CA8C" valign="center" halign="right" position="914,675" render="Label" size="107,35" source="session.Event_Next" transparent="1" zPosition="1">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;22" foregroundColor="#00F8CA8C" halign="left" noWrap="1" position="273,675" render="Label" size="60,35" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;20" foregroundColor="#00F8CA8C" halign="center" noWrap="1" position="327,675" size="10,35" text="-" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular;22" foregroundColor="#00F8CA8C" halign="right" noWrap="1" position="331,675" render="Label" size="60,35" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+
+    <!-- Tuner Info A B C D -->
+    <eLabel text="A" position="45,640" zPosition="1" size="15,18" font="Regular;16" halign="center" foregroundColor="#00555555" backgroundColor="black" transparent="1" />
+    <eLabel text="B" position="60,640" zPosition="1" size="15,18" font="Regular;16" halign="center" foregroundColor="#00555555" backgroundColor="black" transparent="1" />
+    <eLabel text="C" position="75,640" zPosition="1" size="15,18" font="Regular;16" halign="center" foregroundColor="#00555555" backgroundColor="black" transparent="1" />
+    <eLabel text="D" position="90,640" zPosition="1" size="15,18" font="Regular;16" halign="center" foregroundColor="#00555555" backgroundColor="black" transparent="1" />
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="45,640" zPosition="2" size="15,18" font="Regular;16" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="60,640" zPosition="2" size="15,18" font="Regular;16" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="75,640" zPosition="2" size="15,18" font="Regular;16" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="90,640" zPosition="2" size="15,18" font="Regular;16" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="45,640" zPosition="3" size="15,18" font="Regular;16" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="60,640" zPosition="3" size="15,18" font="Regular;16" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="75,640" zPosition="3" size="15,18" font="Regular;16" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="90,640" zPosition="3" size="15,18" font="Regular;16" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">3,3</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+
+    <!-- Video Geometry e.g. 1920 x 1080 -->
+    <widget source="session.CurrentService" render="Label" position="21,661" size="50,18" font="Regular;16" halign="right" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1">
+      <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel text="x" position="70,661" size="15,18" font="Regular;16" halign="center" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="81,661" size="55,18" font="Regular;16" halign="left" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+    
+    <!-- AGC, SNR etc. -->
+    <eLabel text="A" position="17,687" size="50,18" font="Regular;16" valign="bottom" foregroundColor="grey" backgroundColor="black" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="17,687" size="50,18" valign="bottom" font="Regular;16" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <eLabel text="S" position="80,687" size="54,18" font="Regular;16" valign="bottom" foregroundColor="grey" backgroundColor="black" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="80,687" size="54,18" valign="bottom" font="Regular;16" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+  </screen>
+
+<!-- ============================================================================================================================== -->
+
+  <!-- KravenVB-like EMC InfoBar Fischreiher Mod -->
+<!-- cf#_#rename -->
+  <screen name="EMCMediaCenter" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar">
+<!--
+		#description#EMC InfoBar
+		#description#Infoleiste bei Film-Wiedergabe im EnhancedMovieCenter 
+		#previewfile#preview/Kraven_Fischmod_EMCMediaCenter.jpg
+/-->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/backg.png" position="0,0" size="1280,720" zPosition="-9" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/ibar_mp.png" position="0,470" size="1280,310" zPosition="-9" alphatest="on" />
+
+    <!-- Progress -->
+    <!-- <eLabel position="30,665" size="1080,1" backgroundColor="white" /> -->
+    <ePixmap position="30,664" zPosition="2" size="1080,8" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/progress_bg.png" transparent="0" alphatest="blend"/>
+    <widget source="Service" render="Progress" position="30,664" size="1080,8" zPosition="4" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/progress_rec.png" transparent="1">
+      <convert type="EMCRecordPosition">Position</convert>
+    </widget>
+    <widget source="Service" render="Progress" position="30,664" size="1080,8" zPosition="5" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/progress.png" transparent="1">
+      <convert type="EMCServicePosition">Position</convert>
+    </widget>
+    <widget source="Service" render="EMCPositionGauge" position="30,663" size="1080,10" zPosition="6" transparent="1">
+      <convert type="EMCServicePosition">Gauge</convert>
+    </widget>
+    
+    <!-- Video Geometry e.g. 1920 x 1080 -->
+    <widget source="session.CurrentService" render="Label" position="15,685" size="50,18" font="Regular;16" halign="right" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1">
+      <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel text="x" position="64,685" size="15,18" font="Regular;16" halign="center" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="76,685" size="55,18" font="Regular;16" halign="left" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+
+    <!-- Times -->
+    <widget source="Service" render="Label" backgroundColor="black" font="Regular;22" foregroundColor="white" halign="left" noWrap="1" position="30,626" size="80,35" transparent="1" valign="center" zPosition="1">
+      <convert type="EMCServicePosition">Position,ShowHours</convert>
+    </widget>
+    <widget source="Service" render="Label" backgroundColor="black" font="Regular;22" foregroundColor="white" halign="right" position="1004,626" size="107,35" transparent="1" valign="center" zPosition="1">
+      <convert type="EMCServicePosition">Remaining,Negate,ShowHours</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;22" foregroundColor="#00F8CA8C" halign="center" position="945,675" size="107,35" text="Länge:" transparent="1" valign="center" zPosition="1" />
+    <widget source="Service" render="Label" backgroundColor="black" font="Regular;22" foregroundColor="#00F8CA8C" valign="center" halign="right" position="1004,675" size="107,35" transparent="1" zPosition="1">
+      <convert type="EMCServicePosition">Length,ShowHours</convert>
+    </widget>
+
+    <!-- Clock -->
+    <widget backgroundColor="black" font="Regular; 30" foregroundColor="white" halign="center" position="1132,600" render="Label" size="44,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular; 30" foregroundColor="white" halign="center" position="1169,600" size="15,80" text=":" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular; 30" foregroundColor="white" halign="center" position="1178,600" render="Label" size="44,80" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular; 22" foregroundColor="white" halign="center" position="1215,614" size="15,60" text=":" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular; 22" foregroundColor="white" halign="center" position="1223,614" render="Label" size="35,60" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular; 18" foregroundColor="#00F8CA8C" halign="center" position="1115,679" render="Label" size="168,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular; 18" foregroundColor="#00F8CA8C" halign="center" position="1115,659" render="Label" size="168,30" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+
+    <!-- Name of Recording -->
+    <widget source="session.CurrentService" render="Label" font="Regular;30" foregroundColor="white" halign="left" noWrap="1" position="130,621" size="910,36" backgroundColor="black" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+
+    <!-- TODO Description of Recording -->
+    <widget source="Service" render="Label" font="Regular;30" foregroundColor="#00F8CA8C" halign="left" position="430,671" size="657,36" backgroundColor="black" transparent="1">
+      <convert type="MovieInfo">ShortDescription</convert>
+    </widget>
+  </screen>
+
+<!-- ============================================================================================================================== -->
+
+  <!-- MOD - from https://github.com/oe-alliance/oe-alliance-e2-skindefault/blob/master/skin_default.xml#L2078 -->
+<!-- cf#_#rename -->
+  <screen name="PVRState" position="604,682" zPosition="1" size="72,24" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
+<!--
+		#description#PVR State Icons (play, pause, ...)
+		#description#Wiedergabe-Statussymbole
+		#previewfile#preview/Kraven_Fischmod_PVRState.png
+/-->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_ico_frame_lighter.png" position="0,0" size="72,24" zPosition="1" />
+    <widget name="statusicon" position="0,0" zPosition="2" size="72,24" alphatest="on" pixmaps="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_play.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_pause.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_stop.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_forward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_backward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_slow.png"/>
+    <widget name="speed" position="0,1" size="42,20" font="Regular;22" halign="center" valign="center" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1" zPosition="3"/>
+  </screen>
+
+<!-- ============================================================================================================================== -->
+
+  <!-- SpecialJump InfoBar (just the jump time) - POSITION DEFINED BY SPECIALJUMP CONFIG -->
+  <!--						  config.plugins.SpecialJump.bar_x=273   -->
+  <!--						  config.plugins.SpecialJump.bar_y=674   -->
+
+<!-- cf#_#rename -->
+  <screen name="SpecialJump_SpecialJumpInfoBar" title="SpecialJump InfoBar" position="7777,7777" size="755,36" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
+<!--
+		#description#SpecialJump InfoBar (just the jump time)
+		#description#SpecialJump InfoBar (nur die Sprungzeit)
+		#previewfile#preview/Kraven_Fischmod_SpecialJumpInfoBar.png
+/-->
+    <widget backgroundColor="black" foregroundColor="#00F8CA8C" font="Regular;24" halign="center" name="SJJumpTime" position="267,0" size="200,36" transparent="0" zPosition="9" />
+  </screen>
+
+<!-- ============================================================================================================================== -->
+
+  <!-- KravenVB TimeshiftState Fischreiher Mod -->
+<!-- cf#_#rename -->
+  <screen name="TimeshiftState" position="0,0" size="1280,170" title="TimeshiftState" flags="wfNoBorder">
+<!--
+		#description#Timeshift Infobar (on top)
+		#description#Timeshift Infoleiste (oben)
+		#previewfile#preview/Kraven_Fischmod_TimeshiftState.jpg
+/-->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/backg.png" position="0,0" size="1280,170" zPosition="-9" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/shift_wide.png" position="0,0" size="1280,170" zPosition="-9" alphatest="on"/>
+
+    <!-- Progress -->
+    <!-- <eLabel position="100,45" size="1080,1" backgroundColor="white" /> -->
+    <ePixmap position="100,44" zPosition="2" size="1080,8" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/progress_bg.png" transparent="0" alphatest="blend"/>
+    <widget source="session.CurrentService" render="Progress" position="100,44" size="1080,8" zPosition="5" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/progress.png" transparent="1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <!-- <widget name="PTSSeekPointer" position="100,40" size="19,20" pixmap="position_pointer2.png" alphatest="on" zPosition="4" /> -->
+    
+    <!-- Times -->
+    <widget source="session.CurrentService" render="Label" backgroundColor="black" font="Regular;22" foregroundColor="white" halign="left" noWrap="1" position="100,11" size="80,35" transparent="1" valign="center" zPosition="1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" backgroundColor="black" font="Regular;22" foregroundColor="white" halign="right" position="1074,11" size="107,35" transparent="1" valign="center" zPosition="1">
+      <convert type="ServicePosition">Remaining</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;22" foregroundColor="#00F8CA8C" halign="center" position="930,55" size="207,25" text="Timeshift Länge:" transparent="1" valign="center" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" backgroundColor="black" font="Regular;22" foregroundColor="#00F8CA8C" valign="center" halign="right" position="1074,55" size="107,25" transparent="1" zPosition="1">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+
+    <!-- Name of timeshift event -->
+    <widget name="eventname" font="Regular;30" foregroundColor="white" halign="left" noWrap="1" position="200,6" size="910,36" backgroundColor="black" transparent="1"/>
+
+    <!-- play/pause statusicon -->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_ico_frame_lighter.png" position="604,56" size="72,24" zPosition="1" />
+    <widget name="statusicon" position="604,56" zPosition="2" size="72,24" alphatest="on" pixmaps="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_play.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_pause.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_stop.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_forward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_backward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_slow.png"/>
+    <widget name="speed" position="604,57" size="42,20" font="Regular;22" halign="center" valign="center" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1" zPosition="3"/>
+  </screen>
+  
+<!--
+	#description#- Infobar Skinparts by Fischreiher -
+	#description#  heavily inspired by KravenVB
+	#description#  slightly inspired by DMConcinnity-HD
+	#description#  thanks to all contributors
+	#previewfile#preview/Kraven_Fischmod_EMCMediaCenter.jpg
+/-->
+
+<!-- ============================================================================================================================== -->
+<!-- ==== FHD section                                                                                                           === -->
+<!-- ============================================================================================================================== -->
+
+  <!-- KravenVB InfoBar Fischreiher Mod -->
+<!-- cf#_#rename -->
+  <screen name="InfoBar#_FHDscreen" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
+<!--
+		#description#Infobar for live TV
+		#description#Die Infoleiste für live TV
+		#previewfile#preview/Kraven_Fischmod_InfoBar.jpg
+/-->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/backg.png" position="0,0" size="1920,1080" zPosition="-9" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/ibar.png" position="0,705" size="1920,465" zPosition="-9" alphatest="on" />
+
+    <!-- REC -->
+    <ePixmap position="1778,1028" size="74,30" zPosition="1" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/ico_rec_off.png" alphatest="blend" />
+    <widget source="session.RecordState" render="Pixmap" position="1778,1028" size="74,30" zPosition="2" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/ico_rec_on.png" alphatest="blend">
+      <convert type="ConditionalShowHide" />
+      <!-- <convert type="ConditionalShowHide">Blink</convert> -->
+    </widget>
+
+    <!-- Channel -->
+    <widget source="session.CurrentService" render="ChannelNumber" position="30,893" size="164,68" font="Regular;54" valign="bottom" halign="left" backgroundColor="black" transparent="1" zPosition="3" />
+    <widget source="session.CurrentService" render="Label" position="113,893" size="600,68" font="Regular;48" valign="bottom" halign="left" noWrap="1" backgroundColor="black" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+
+    <!-- Clock -->
+    <widget backgroundColor="black" font="Regular;65" foregroundColor="white" halign="center" position="1596,900" render="Label" size="98,120" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;65" foregroundColor="white" halign="center" position="1680,900" size="23,120" text=":" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular;65" foregroundColor="white" halign="center" position="1694,900" render="Label" size="98,120" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;48" foregroundColor="white" halign="center" position="1776,921" size="23,90" text=":" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular;48" foregroundColor="white" halign="center" position="1790,921" render="Label" size="75,90" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;27" foregroundColor="#00F8CA8C" halign="center" position="1544,1019" render="Label" size="305,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;27" foregroundColor="#00F8CA8C" halign="center" position="1544,989" render="Label" size="305,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+
+    <!-- Picon -->
+<!--<widget source="session.CurrentService" render="PiconBg" position="225,963" size="150,90" transparent="0" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget> -->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Picon_bg.png" position="225,963" size="150,90" zPosition="-8" transparent="0" alphatest="blend"/>
+    <widget source="session.CurrentService" render="Picon" position="225,963" size="150,90" transparent="0" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    
+    <!-- Event_Now -->
+    <widget font="Regular;45" foregroundColor="white" halign="left" noWrap="1" position="623,941" render="Label"                                                                                                                      size="758,60" source="session.Event_Now" backgroundColor="black" transparent="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;33" foregroundColor="white" halign="right" position="1371,950" render="Label" size="161,53" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;33" foregroundColor="white" halign="left" noWrap="1" position="410,950" render="Label" size="90,53" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;30" foregroundColor="white" halign="center" noWrap="1" position="491,950" size="15,53" text="-" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular;33" foregroundColor="white" halign="right" noWrap="1" position="497,950" render="Label" size="90,53" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+
+    <!-- Progress -->
+    <eLabel position="410,1005" size="1119,2" backgroundColor="white" />
+    <widget position="410,1002" render="Progress" size="1119,8" source="session.Event_Now" transparent="1" zPosition="7" foregroundColor="#00C3461B" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/progress749.png">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    
+    <!-- Event_Next -->
+    <widget font="Regular;45" foregroundColor="#00F8CA8C" halign="left" position="623,1007" noWrap="1" render="Label"                                                                                                           size="758,60" source="session.Event_Next" valign="top" backgroundColor="black" transparent="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;33" foregroundColor="#00F8CA8C" valign="center" halign="right" position="1371,1013" render="Label" size="161,53" source="session.Event_Next" transparent="1" zPosition="1">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;33" foregroundColor="#00F8CA8C" halign="left" noWrap="1" position="410,1013" render="Label" size="90,53" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;30" foregroundColor="#00F8CA8C" halign="center" noWrap="1" position="491,1013" size="15,53" text="-" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular;33" foregroundColor="#00F8CA8C" halign="right" noWrap="1" position="497,1013" render="Label" size="90,53" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+
+    <!-- Tuner Info A B C D -->
+    <eLabel text="A" position="68,960" zPosition="1" size="23,27" font="Regular;24" halign="center" foregroundColor="#00555555" backgroundColor="black" transparent="1" />
+    <eLabel text="B" position="90,960" zPosition="1" size="23,27" font="Regular;24" halign="center" foregroundColor="#00555555" backgroundColor="black" transparent="1" />
+    <eLabel text="C" position="113,960" zPosition="1" size="23,27" font="Regular;24" halign="center" foregroundColor="#00555555" backgroundColor="black" transparent="1" />
+    <eLabel text="D" position="135,960" zPosition="1" size="23,27" font="Regular;24" halign="center" foregroundColor="#00555555" backgroundColor="black" transparent="1" />
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="68,960" zPosition="2" size="23,27" font="Regular;24" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="90,960" zPosition="2" size="23,27" font="Regular;24" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="113,960" zPosition="2" size="23,27" font="Regular;24" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="135,960" zPosition="2" size="23,27" font="Regular;24" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="68,960" zPosition="3" size="23,27" font="Regular;24" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="90,960" zPosition="3" size="23,27" font="Regular;24" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="113,960" zPosition="3" size="23,27" font="Regular;24" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="135,960" zPosition="3" size="23,27" font="Regular;24" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">3,3</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+
+    <!-- Video Geometry e.g. 1920 x 1080 -->
+    <widget source="session.CurrentService" render="Label" position="32,992" size="75,27" font="Regular;24" halign="right" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1">
+      <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel text="x" position="105,992" size="23,27" font="Regular;24" halign="center" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="122,992" size="83,27" font="Regular;24" halign="left" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+    
+    <!-- AGC, SNR etc. -->
+    <eLabel text="A" position="26,1031" size="75,27" font="Regular;24" valign="bottom" foregroundColor="grey" backgroundColor="black" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="26,1031" size="75,27" valign="bottom" font="Regular;24" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <eLabel text="S" position="120,1031" size="81,27" font="Regular;24" valign="bottom" foregroundColor="grey" backgroundColor="black" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="120,1031" size="81,27" valign="bottom" font="Regular;24" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+  </screen>
+
+<!-- ============================================================================================================================== -->
+
+  <!-- KravenVB-like EMC InfoBar Fischreiher Mod -->
+<!-- cf#_#rename -->
+  <screen name="EMCMediaCenter#_FHDscreen" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
+<!--
+		#description#EMC InfoBar
+		#description#Infoleiste bei Film-Wiedergabe im EnhancedMovieCenter 
+		#previewfile#preview/Kraven_Fischmod_EMCMediaCenter.jpg
+/-->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/backg.png" position="0,0" size="1920,1080" zPosition="-9" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/ibar_mp.png" position="0,705" size="1920,465" zPosition="-9" alphatest="on" />
+
+    <!-- Progress -->
+    <!-- <eLabel position="45,998" size="1620,2" backgroundColor="white" /> -->
+    <ePixmap position="45,996" zPosition="2" size="1620,12" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/progress_bg.png" transparent="0" alphatest="blend"/>
+    <widget source="Service" render="Progress" position="45,996" size="1620,12" zPosition="4" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/progress_rec.png" transparent="1">
+      <convert type="EMCRecordPosition">Position</convert>
+    </widget>
+    <widget source="Service" render="Progress" position="45,996" size="1620,12" zPosition="5" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/progress.png" transparent="1">
+      <convert type="EMCServicePosition">Position</convert>
+    </widget>
+    <widget source="Service" render="EMCPositionGauge" position="45,995" size="1620,15" zPosition="6" transparent="1">
+      <convert type="EMCServicePosition">Gauge</convert>
+    </widget>
+    
+    <!-- Video Geometry e.g. 1920 x 1080 -->
+    <widget source="session.CurrentService" render="Label" position="23,1028" size="75,27" font="Regular;24" halign="right" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1">
+      <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel text="x" position="96,1028" size="23,27" font="Regular;24" halign="center" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="114,1028" size="83,27" font="Regular;24" halign="left" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+
+    <!-- Times -->
+    <widget source="Service" render="Label" backgroundColor="black" font="Regular;33" foregroundColor="white" halign="left" noWrap="1" position="45,939" size="120,53" transparent="1" valign="center" zPosition="1">
+      <convert type="EMCServicePosition">Position,ShowHours</convert>
+    </widget>
+    <widget source="Service" render="Label" backgroundColor="black" font="Regular;33" foregroundColor="white" halign="right" position="1506,939" size="161,53" transparent="1" valign="center" zPosition="1">
+      <convert type="EMCServicePosition">Remaining,Negate,ShowHours</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;33" foregroundColor="#00F8CA8C" halign="center" position="1418,1013" size="161,53" text="Länge:" transparent="1" valign="center" zPosition="1" />
+    <widget source="Service" render="Label" backgroundColor="black" font="Regular;33" foregroundColor="#00F8CA8C" valign="center" halign="right" position="1506,1013" size="161,53" transparent="1" zPosition="1">
+      <convert type="EMCServicePosition">Length,ShowHours</convert>
+    </widget>
+
+    <!-- Clock -->
+    <widget backgroundColor="black" font="Regular;45" foregroundColor="white" halign="center" position="1698,900" render="Label" size="66,120" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%H</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;45" foregroundColor="white" halign="center" position="1754,900" size="23,120" text=":" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular;45" foregroundColor="white" halign="center" position="1767,900" render="Label" size="66,120" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%M</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;33" foregroundColor="white" halign="center" position="1823,921" size="23,90" text=":" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="black" font="Regular;33" foregroundColor="white" halign="center" position="1835,921" render="Label" size="53,90" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;27" foregroundColor="#00F8CA8C" halign="center" position="1673,1019" render="Label" size="252,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular;27" foregroundColor="#00F8CA8C" halign="center" position="1673,989" render="Label" size="252,45" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+
+    <!-- Name of Recording -->
+    <widget source="session.CurrentService" render="Label" font="Regular;45" foregroundColor="white" halign="left" noWrap="1" position="195,932" size="1365,54" backgroundColor="black" transparent="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+
+    <!-- TODO Description of Recording -->
+    <widget source="Service" render="Label" font="Regular;45" foregroundColor="#00F8CA8C" halign="left" position="645,1007" size="986,54" backgroundColor="black" transparent="1">
+      <convert type="MovieInfo">ShortDescription</convert>
+    </widget>
+  </screen>
+
+<!-- ============================================================================================================================== -->
+
+  <!-- MOD - from https://github.com/oe-alliance/oe-alliance-e2-skindefault/blob/master/skin_default.xml#L2078 -->
+<!-- cf#_#rename -->
+  <screen name="PVRState#_FHDscreen" position="906,1023" zPosition="1" size="108,36" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
+<!--
+		#description#PVR State Icons (play, pause, ...)
+		#description#Wiedergabe-Statussymbole
+		#previewfile#preview/Kraven_Fischmod_PVRState.png
+/-->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_ico_frame_lighter.png" position="0,0" size="108,36" zPosition="1" />
+    <widget name="statusicon" position="0,0" zPosition="2" size="108,36" alphatest="on" pixmaps="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_play.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_pause.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_stop.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_forward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_backward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_slow.png"/>
+    <widget name="speed" position="0,2" size="63,30" font="Regular;33" halign="center" valign="center" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1" zPosition="3"/>
+  </screen>
+
+<!-- ============================================================================================================================== -->
+
+  <!-- SpecialJump InfoBar (just the jump time) - POSITION DEFINED BY SPECIALJUMP CONFIG -->
+  <!--						  config.plugins.SpecialJump.bar_x=273   -->
+  <!--						  config.plugins.SpecialJump.bar_y=674   -->
+
+<!-- cf#_#rename -->
+  <screen name="SpecialJump_SpecialJumpInfoBar#_FHDscreen" title="SpecialJump InfoBar" position="11666,11666" size="1133,54" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
+<!--
+		#description#SpecialJump InfoBar (just the jump time)
+		#description#SpecialJump InfoBar (nur die Sprungzeit)
+		#previewfile#preview/Kraven_Fischmod_SpecialJumpInfoBar.png
+/-->
+    <widget backgroundColor="black" foregroundColor="#00F8CA8C" font="Regular;36" halign="center" name="SJJumpTime" position="401,0" size="300,54" transparent="0" zPosition="9" />
+  </screen>
+
+<!-- ============================================================================================================================== -->
+
+  <!-- KravenVB TimeshiftState Fischreiher Mod -->
+<!-- cf#_#rename -->
+  <screen name="TimeshiftState#_FHDscreen" position="0,0" size="1920,255" title="TimeshiftState" flags="wfNoBorder">
+<!--
+		#description#Timeshift Infobar (on top)
+		#description#Timeshift Infoleiste (oben)
+		#previewfile#preview/Kraven_Fischmod_TimeshiftState.jpg
+/-->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/backg.png" position="0,0" size="1920,255" zPosition="-9" />
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/shift_wide.png" position="0,0" size="1920,255" zPosition="-9" alphatest="on"/>
+
+    <!-- Progress -->
+    <!-- <eLabel position="150,68" size="1620,2" backgroundColor="white" /> -->
+    <ePixmap position="150,66" zPosition="2" size="1620,12" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/progress_bg.png" transparent="0" alphatest="blend"/>
+    <widget source="session.CurrentService" render="Progress" position="150,66" size="1620,12" zPosition="5" pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/progress.png" transparent="1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <!-- <widget name="PTSSeekPointer" position="150,60" size="29,30" pixmap="position_pointer2.png" alphatest="on" zPosition="4" /> -->
+    
+    <!-- Times -->
+    <widget source="session.CurrentService" render="Label" backgroundColor="black" font="Regular;33" foregroundColor="white" halign="left" noWrap="1" position="150,17" size="120,53" transparent="1" valign="center" zPosition="1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" backgroundColor="black" font="Regular;33" foregroundColor="white" halign="right" position="1611,17" size="161,53" transparent="1" valign="center" zPosition="1">
+      <convert type="ServicePosition">Remaining</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular;33" foregroundColor="#00F8CA8C" halign="center" position="1395,83" size="311,38" text="Timeshift Länge:" transparent="1" valign="center" zPosition="1" />
+    <widget source="session.CurrentService" render="Label" backgroundColor="black" font="Regular;33" foregroundColor="#00F8CA8C" valign="center" halign="right" position="1611,83" size="161,38" transparent="1" zPosition="1">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+
+    <!-- Name of timeshift event -->
+    <widget name="eventname" font="Regular;45" foregroundColor="white" halign="left" noWrap="1" position="300,9" size="1365,54" backgroundColor="black" transparent="1"/>
+
+    <!-- play/pause statusicon -->
+    <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_ico_frame_lighter.png" position="906,84" size="108,36" zPosition="1" />
+    <widget name="statusicon" position="906,84" zPosition="2" size="108,36" alphatest="on" pixmaps="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_play.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_pause.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_stop.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_forward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_backward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_slow.png"/>
+    <widget name="speed" position="906,86" size="63,30" font="Regular;33" halign="center" valign="center" foregroundColor="#00F8CA8C" backgroundColor="black" transparent="1" zPosition="3"/>
+  </screen>
+  
+<!-- cf#_#begin -->
+</skin>
