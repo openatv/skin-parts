@@ -61,17 +61,4 @@
 		<panel name="Fisch_PVRState"/>
   </screen>
 
-<!-- ============================================================================================================================== -->
-
-  <!-- SpecialJump InfoBar (just the jump time) - POSITION DEFINED BY SPECIALJUMP CONFIG -->
-  <!--						  config.plugins.SpecialJump.bar_x=273   -->
-  <!--						  config.plugins.SpecialJump.bar_y=674   -->
-  <screen name="SpecialJump_SpecialJumpInfoBar" title="SpecialJump InfoBar" position="7777,7777" size="755,36" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
-<!--
-		#description#SpecialJump InfoBar (just the jump time)
-		#description#SpecialJump InfoBar (nur die Sprungzeit)
-		#previewfile#preview/Kraven_Fischmod_SpecialJumpInfoBar.png
-/-->
-		<panel name="Fisch_SpecialJump_SpecialJumpInfoBar"/>
-  </screen>
 

@@ -63,19 +63,6 @@
 		<panel name="Fisch_PVRState"/>
   </screen>
 
-<!-- ============================================================================================================================== -->
-
-  <!-- SpecialJump InfoBar (just the jump time) - POSITION DEFINED BY SPECIALJUMP CONFIG -->
-  <!--						  config.plugins.SpecialJump.bar_x=273   -->
-  <!--						  config.plugins.SpecialJump.bar_y=674   -->
-  <screen name="SpecialJump_SpecialJumpInfoBar" title="SpecialJump InfoBar" position="7777,7777" size="755,36" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
-<!--
-		#description#SpecialJump InfoBar (just the jump time)
-		#description#SpecialJump InfoBar (nur die Sprungzeit)
-		#previewfile#preview/Kraven_Fischmod_SpecialJumpInfoBar.png
-/-->
-		<panel name="Fisch_SpecialJump_SpecialJumpInfoBar"/>
-  </screen>
 
 <!--
 	#description#- Infobar Skinparts by Fischreiher -
@@ -343,12 +330,9 @@
 
 <!-- ============================================================================================================================== -->
 
-  <!-- SpecialJump InfoBar (just the jump time) - POSITION DEFINED BY SPECIALJUMP CONFIG -->
-  <!--						  config.plugins.SpecialJump.bar_x=273   -->
-  <!--						  config.plugins.SpecialJump.bar_y=674   -->
-
+  <!-- SpecialJump InfoBar (just the jump time) -->
 <!-- cf#_#rename -->
-  <screen name="Fisch_SpecialJump_SpecialJumpInfoBar" title="SpecialJump InfoBar" position="7777,7777" size="755,36" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">#hide#
+  <screen name="SpecialJump_SpecialJumpInfoBar" title="SpecialJump InfoBar" position="273,674" size="755,36" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
 <!--
 		#description#SpecialJump InfoBar (just the jump time)
 		#description#SpecialJump InfoBar (nur die Sprungzeit)
@@ -665,12 +649,9 @@
 
 <!-- ============================================================================================================================== -->
 
-  <!-- SpecialJump InfoBar (just the jump time) - POSITION DEFINED BY SPECIALJUMP CONFIG -->
-  <!--						  config.plugins.SpecialJump.bar_x=273   -->
-  <!--						  config.plugins.SpecialJump.bar_y=674   -->
-
+  <!-- SpecialJump InfoBar (just the jump time) -->
 <!-- cf#_#rename -->
-  <screen name="Fisch_SpecialJump_SpecialJumpInfoBar#_FHDscreen" title="SpecialJump InfoBar" position="11666,11666" size="1133,54" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">#hide#
+  <screen name="SpecialJump_SpecialJumpInfoBar#_FHDscreen" title="SpecialJump InfoBar" position="410,1011" size="1133,54" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
 <!--
 		#description#SpecialJump InfoBar (just the jump time)
 		#description#SpecialJump InfoBar (nur die Sprungzeit)

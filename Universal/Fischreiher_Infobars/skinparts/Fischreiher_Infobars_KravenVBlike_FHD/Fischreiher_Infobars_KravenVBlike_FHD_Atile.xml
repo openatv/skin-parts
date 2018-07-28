@@ -282,18 +282,15 @@
 
 <!-- ============================================================================================================================== -->
 
-  <!-- SpecialJump InfoBar (just the jump time) - POSITION DEFINED BY SPECIALJUMP CONFIG -->
-  <!--						  config.plugins.SpecialJump.bar_x=273   -->
-  <!--						  config.plugins.SpecialJump.bar_y=674   -->
-
+  <!-- SpecialJump InfoBar (just the jump time) -->
 <!-- cf#_#rename -->
-  <screen name="SpecialJump_SpecialJumpInfoBar" title="SpecialJump InfoBar" position="11666,11666" size="1133,54" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
+  <screen name="SpecialJump_SpecialJumpInfoBar" title="SpecialJump InfoBar" position="410,1011" size="1133,54" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
 <!--
 		#description#SpecialJump InfoBar (just the jump time)
 		#description#SpecialJump InfoBar (nur die Sprungzeit)
 		#previewfile#preview/Kraven_Fischmod_SpecialJumpInfoBar.png
 /-->
-    <widget backgroundColor="black" foregroundColor="#00F8CA8C" font="Regular;36" halign="center" name="SJJumpTime" position="401,0" size="300,54" transparent="0" zPosition="9" />
+    <widget backgroundColor="black" foregroundColor="#00F8CA8C" font="KravenVBRegular;36" halign="center" name="SJJumpTime" position="401,0" size="300,54" transparent="0" zPosition="9" />
   </screen>
 
 <!-- ============================================================================================================================== -->
