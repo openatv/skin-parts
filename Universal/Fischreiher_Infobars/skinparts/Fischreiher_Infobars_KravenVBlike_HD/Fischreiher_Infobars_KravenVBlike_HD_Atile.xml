@@ -273,7 +273,7 @@
 <!--
 		#description#PVR State Icons (play, pause, ...)
 		#description#Wiedergabe-Statussymbole
-		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_PVRState.png
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_PVRState.png
 /-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_ico_frame_lighter.png" position="0,0" size="72,24" zPosition="1" />
     <widget name="statusicon" position="0,0" zPosition="2" size="72,24" alphatest="on" pixmaps="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_play.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_pause.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_stop.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_forward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_backward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_sym_slow.png"/>

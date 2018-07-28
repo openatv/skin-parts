@@ -7,7 +7,7 @@
 	#description#  heavily inspired by KravenVB
 	#description#  slightly inspired by DMConcinnity-HD
 	#description#  thanks to all contributors
-	#previewfile#preview/Kraven_Fischmod_EMCMediaCenter.jpg
+	#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_EMCMediaCenter.jpg
 /-->
 
 <!-- ============================================================================================================================== -->
@@ -18,7 +18,7 @@
 <!--
 		#description#Infobar for live TV
 		#description#Die Infoleiste für live TV
-		#previewfile#preview/Kraven_Fischmod_InfoBar.jpg
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_InfoBar.jpg
 /-->
 		<panel name="Fisch_InfoBar"/>
   </screen>
@@ -31,7 +31,7 @@
 <!--
 		#description#EMC InfoBar
 		#description#Infoleiste bei Film-Wiedergabe im EnhancedMovieCenter 
-		#previewfile#preview/Kraven_Fischmod_EMCMediaCenter.jpg
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_EMCMediaCenter.jpg
 /-->
 		<panel name="Fisch_EMCMediaCenter"/>
   </screen>
@@ -44,7 +44,7 @@
 <!--
 		#description#Timeshift Infobar (on top)
 		#description#Timeshift Infoleiste (oben)
-		#previewfile#preview/Kraven_Fischmod_TimeshiftState.jpg
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_TimeshiftState.jpg
 /-->
 		<panel name="Fisch_TimeshiftState"/>
   </screen>
@@ -56,7 +56,7 @@
 <!--
 		#description#PVR State Icons (play, pause, ...)
 		#description#Wiedergabe-Statussymbole
-		#previewfile#preview/Kraven_Fischmod_PVRState.png
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_PVRState.png
 /-->
 		<panel name="Fisch_PVRState"/>
   </screen>
@@ -69,7 +69,7 @@
 <!--
 		#description#SpecialJump InfoBar (just the jump time)
 		#description#SpecialJump InfoBar (nur die Sprungzeit)
-		#previewfile#preview/Kraven_Fischmod_SpecialJumpInfoBar.png
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_SpecialJumpInfoBar.png
 /-->
 		<panel name="Fisch_SpecialJump_SpecialJumpInfoBar"/>
   </screen>
