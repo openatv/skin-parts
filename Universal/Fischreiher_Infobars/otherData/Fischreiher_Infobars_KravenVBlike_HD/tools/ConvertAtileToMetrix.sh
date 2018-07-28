@@ -29,8 +29,6 @@ cat $file_Atile_HD \
 
 sed -r -i 's|<screen\s+name=\"([A-Za-z0-9\_]+)\"(.*)>|<screen\ name=\"Fisch_\1\"\2>#hide#|g' $file_Metrix_HD.part_HD
 sed -r -i 's|<screen\s+name=\"([A-Za-z0-9\_]+)\"(.*)>|<screen\ name=\"Fisch_\1#_FHDscreen\"\2>#hide#|g' $file_Metrix_HD.part_FHD
-sed -r -i 's|<screen\s+name=\"Fisch_SpecialJump_SpecialJumpInfoBar(.*)>#hide#|<screen\ name=\"SpecialJump_SpecialJumpInfoBar\1>|g' $file_Metrix_HD.part_HD
-sed -r -i 's|<screen\s+name=\"Fisch_SpecialJump_SpecialJumpInfoBar(.*)>#hide#|<screen\ name=\"SpecialJump_SpecialJumpInfoBar\1>|g' $file_Metrix_HD.part_FHD
 sed -r -i 's|/icons_HD/|/icons_FHD/|g'     $file_Metrix_HD.part_FHD
 sed -r -i 's|HD\s+section\s|FHD section|g' $file_Metrix_HD.part_FHD
 

@@ -62,3 +62,15 @@
   </screen>
 
 
+<!-- ============================================================================================================================== -->
+
+  <!-- SpecialJump InfoBar (just the jump time) -->
+  <screen name="SpecialJump_SpecialJumpInfoBar" title="SpecialJump InfoBar" position="273,674" size="755,36" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
+<!--
+		#description#SpecialJump InfoBar (just the jump time)
+		#description#SpecialJump InfoBar (nur die Sprungzeit)
+		#previewfile#preview/Kraven_Fischmod_SpecialJumpInfoBar.png
+/-->
+		<panel name="Fisch_SpecialJump_SpecialJumpInfoBar"/>
+  </screen>
+

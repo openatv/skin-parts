@@ -4,7 +4,7 @@
 	#description#  heavily inspired by KravenVB
 	#description#  slightly inspired by DMConcinnity-HD
 	#description#  thanks to all contributors
-	#previewfile#preview/Kraven_Fischmod_EMCMediaCenter.jpg
+	#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_EMCMediaCenter.jpg
 /-->
   <colors>
     <color name="black" value="#00000000" />
@@ -34,7 +34,7 @@
 <!--
 		#description#Infobar for live TV
 		#description#Die Infoleiste für live TV
-		#previewfile#preview/Kraven_Fischmod_InfoBar.jpg
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_InfoBar.jpg
 /-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/backg.png" position="0,0" size="1920,1080" zPosition="-9" />
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/ibar.png" position="0,705" size="1920,465" zPosition="-9" alphatest="on" />
@@ -196,7 +196,7 @@
 <!--
 		#description#EMC InfoBar
 		#description#Infoleiste bei Film-Wiedergabe im EnhancedMovieCenter 
-		#previewfile#preview/Kraven_Fischmod_EMCMediaCenter.jpg
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_EMCMediaCenter.jpg
 /-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/backg.png" position="0,0" size="1920,1080" zPosition="-9" />
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/ibar_mp.png" position="0,705" size="1920,465" zPosition="-9" alphatest="on" />
@@ -273,7 +273,7 @@
 <!--
 		#description#PVR State Icons (play, pause, ...)
 		#description#Wiedergabe-Statussymbole
-		#previewfile#preview/Kraven_Fischmod_PVRState.png
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_PVRState.png
 /-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_ico_frame_lighter.png" position="0,0" size="108,36" zPosition="1" />
     <widget name="statusicon" position="0,0" zPosition="2" size="108,36" alphatest="on" pixmaps="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_play.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_pause.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_stop.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_forward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_backward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_slow.png"/>
@@ -288,7 +288,7 @@
 <!--
 		#description#SpecialJump InfoBar (just the jump time)
 		#description#SpecialJump InfoBar (nur die Sprungzeit)
-		#previewfile#preview/Kraven_Fischmod_SpecialJumpInfoBar.png
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_SpecialJumpInfoBar.png
 /-->
     <widget backgroundColor="black" foregroundColor="#00F8CA8C" font="KravenVBRegular;36" halign="center" name="SJJumpTime" position="401,0" size="300,54" transparent="0" zPosition="9" />
   </screen>
@@ -301,7 +301,7 @@
 <!--
 		#description#Timeshift Infobar (on top)
 		#description#Timeshift Infoleiste (oben)
-		#previewfile#preview/Kraven_Fischmod_TimeshiftState.jpg
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_TimeshiftState.jpg
 /-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/backg.png" position="0,0" size="1920,255" zPosition="-9" />
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/shift_wide.png" position="0,0" size="1920,255" zPosition="-9" alphatest="on"/>
