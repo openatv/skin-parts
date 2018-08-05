@@ -1,11 +1,4 @@
 <skin>
-<!--
-	#description#- Infobar Skinparts by Fischreiher -
-	#description#  heavily inspired by KravenVB
-	#description#  slightly inspired by DMConcinnity-HD
-	#description#  thanks to all contributors
-	#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_EMCMediaCenter.jpg
-/-->
   <colors>
     <color name="black" value="#00000000" />
     <color name="blue" value="#0041b1ec" />
@@ -31,11 +24,6 @@
   <!-- KravenVB InfoBar Fischreiher Mod -->
 <!-- cf#_#rename -->
   <screen name="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
-<!--
-		#description#Infobar for live TV
-		#description#Die Infoleiste für live TV
-		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_InfoBar.jpg
-/-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/backg.png" position="0,0" size="1920,1080" zPosition="-9" />
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/ibar.png" position="0,705" size="1920,465" zPosition="-9" alphatest="on" />
 
@@ -193,11 +181,6 @@
   <!-- KravenVB-like EMC InfoBar Fischreiher Mod -->
 <!-- cf#_#rename -->
   <screen name="EMCMediaCenter" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
-<!--
-		#description#EMC InfoBar
-		#description#Infoleiste bei Film-Wiedergabe im EnhancedMovieCenter 
-		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_EMCMediaCenter.jpg
-/-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/backg.png" position="0,0" size="1920,1080" zPosition="-9" />
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/ibar_mp.png" position="0,705" size="1920,465" zPosition="-9" alphatest="on" />
 
@@ -270,11 +253,6 @@
   <!-- MOD - from https://github.com/oe-alliance/oe-alliance-e2-skindefault/blob/master/skin_default.xml#L2078 -->
 <!-- cf#_#rename -->
   <screen name="PVRState" position="906,1023" zPosition="1" size="108,36" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
-<!--
-		#description#PVR State Icons (play, pause, ...)
-		#description#Wiedergabe-Statussymbole
-		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_PVRState.png
-/-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_ico_frame_lighter.png" position="0,0" size="108,36" zPosition="1" />
     <widget name="statusicon" position="0,0" zPosition="2" size="108,36" alphatest="on" pixmaps="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_play.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_pause.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_stop.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_forward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_backward.png,skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_sym_slow.png"/>
     <widget name="speed" position="0,2" size="63,30" font="KravenVBRegular;33" halign="center" valign="center" foregroundColor="KravenIBFont2" backgroundColor="black" transparent="1" zPosition="3"/>
@@ -285,11 +263,6 @@
   <!-- SpecialJump InfoBar (just the jump time) -->
 <!-- cf#_#rename -->
   <screen name="SpecialJump_SpecialJumpInfoBar" title="SpecialJump InfoBar" position="410,1011" size="1133,54" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
-<!--
-		#description#SpecialJump InfoBar (just the jump time)
-		#description#SpecialJump InfoBar (nur die Sprungzeit)
-		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_SpecialJumpInfoBar.png
-/-->
     <widget backgroundColor="black" foregroundColor="#00F8CA8C" font="KravenVBRegular;36" halign="center" name="SJJumpTime" position="401,0" size="300,54" transparent="0" zPosition="9" />
   </screen>
 
@@ -298,11 +271,6 @@
   <!-- KravenVB TimeshiftState Fischreiher Mod -->
 <!-- cf#_#rename -->
   <screen name="TimeshiftState" position="0,0" size="1920,255" title="TimeshiftState" flags="wfNoBorder">
-<!--
-		#description#Timeshift Infobar (on top)
-		#description#Timeshift Infoleiste (oben)
-		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Kraven_Fischmod_TimeshiftState.jpg
-/-->
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/backg.png" position="0,0" size="1920,255" zPosition="-9" />
     <ePixmap pixmap="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/shift_wide.png" position="0,0" size="1920,255" zPosition="-9" alphatest="on"/>
 
