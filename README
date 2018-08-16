@@ -14,13 +14,13 @@ SKINPACK-NAME                           may only contain letters and numbers, no
 Repository structure:
 ---------------------
 
-skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/SKINPARTS_NAME1.xml	     skinparts file for MetrixHD
-skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/SKINPARTS_NAME1_Atile.xml skinparts file for other skins (with AtileHD support)
-skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/icons 		     all icons used by the skinpart
-skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/fonts 		     all fonts used by the skinpart
-skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/....  		     anything else used by the skinpart
+skinparts/skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/SKINPARTS_NAME1.xml       skinparts file for MetrixHD
+skinparts/skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/SKINPARTS_NAME1_Atile.xml skinparts file for other skins (with AtileHD support)
+skinparts/skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/icons		       all icons used by the skinpart
+skinparts/skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/fonts		       all fonts used by the skinpart
+skinparts/skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/....		       anything else used by the skinpart
 
-skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME2			     another skinpart file (part of the same "pack")
+skinparts/skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME2			       another skinpart file (part of the same "pack")
 
 otherData/SKINPARTS_NAME1/....  		                             anything that is not required for running the skinpart (e.g. pdf documentation)
 
