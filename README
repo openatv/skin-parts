@@ -8,7 +8,7 @@ skinparts-MetrixHD-SKINPACK-NAME        skinparts only designed for MetrixHD
 skinparts-AtileHD-SKINPACK-NAME         skinparts only designed for other skins (with AtileHD support)
 skinparts-universal-SKINPACK-NAME       skinparts designed for MetrixHD and other skins
 
-SKINPACK-NAME                           may only contain letters, numbers, and hyphens (-), no underliner (_) nor any other special characters.
+SKINPACK-NAME                           may only contain letters and numbers, no underliner (_) nor any other special characters.
 
 ---------------------
 Repository structure:
