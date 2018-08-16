@@ -1,30 +1,28 @@
 ---------------------
+Naming rules:
+---------------------
+
+SKINPACK-NAME                           name of a "pack" (a collection of skinparts files)
+
+skinparts-MetrixHD-SKINPACK-NAME        skinparts only designed for MetrixHD
+skinparts-AtileHD-SKINPACK-NAME         skinparts only designed for other skins (with AtileHD support)
+skinparts-universal-SKINPACK-NAME       skinparts designed for MetrixHD and other skins
+
+SKINPACK-NAME                           may only contain letters and numbers, no underliner (_) nor any other special characters.
+
+---------------------
 Repository structure:
 ---------------------
 
-MetrixHD                                            skinparts only designed for MetrixHD
-AtileHD                                             skinparts only designed for other skins (with AtileHD support)
-Universal                                           skinparts designed for MetrixHD and other skins
-|
-\_SKINPACK_NAME                                       name of a "pack" (a collection of skinparts files)
-  |
-  \_skinparts/SKINPARTS_NAME1/SKINPARTS_NAME1.xml        skinparts file for MetrixHD
-  | skinparts/SKINPARTS_NAME1/SKINPARTS_NAME1_Atile.xml  skinparts file for other skins (with AtileHD support)
-  | skinparts/SKINPARTS_NAME1/icons                      all icons used by the skinpart
-  | skinparts/SKINPARTS_NAME1/fonts                      all fonts used by the skinpart
-  | skinparts/SKINPARTS_NAME1/....                       anything else used by the skinpart
-  |
-  \_skinparts/SKINPARTS_NAME2                            another skinpart file (part of the same "pack")
-  |
-  \_otherData/SKINPARTS_NAME1/....                       anything that is not required for running the skinpart (e.g. pdf documentation)
+skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/SKINPARTS_NAME1.xml	     skinparts file for MetrixHD
+skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/SKINPARTS_NAME1_Atile.xml skinparts file for other skins (with AtileHD support)
+skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/icons 		     all icons used by the skinpart
+skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/fonts 		     all fonts used by the skinpart
+skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME1/....  		     anything else used by the skinpart
 
-skinparts_MetrixHD_SKINPACK_NAME.ipk   contains MetrixHD/SKINPACK_NAME/skinparts
-skinparts_AtileHD_SKINPACK_NAME.ipk    contains AtileHD/SKINPACK_NAME/skinparts
-skinparts_Universal_SKINPACK_NAME.ipk  contains Universal/SKINPACK_NAME/skinparts
+skinparts-universal-SKINPACK-NAME1/SKINPARTS_NAME2			     another skinpart file (part of the same "pack")
 
-All ipk files contain only a "skinparts" folder and install its contents into
-    /usr/share/enigma2/skinparts
-
+otherData/SKINPARTS_NAME1/....  		                             anything that is not required for running the skinpart (e.g. pdf documentation)
 
 --------------------
 Designing skinparts:
