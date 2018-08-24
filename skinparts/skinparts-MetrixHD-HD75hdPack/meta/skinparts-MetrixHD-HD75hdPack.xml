@@ -1,0 +1,17 @@
+<default>
+	<prerequisites>
+		<tag type="Skin" />
+	</prerequisites>
+	<info>
+		<author>www.opena.tv Fischreiher</author>
+		<name>HD75hdPack</name>
+		<packagename>enigma2-skinparts-MetrixHD-HD75hdPack</packagename>
+		<shortdescription>HD75hd Pack for MetrixHD</shortdescription>
+		<description>Skinparts pack: HD75hd Pack for MetrixHD</description>
+		<screenshot src="https://github.com/openatv/skin-parts/blob/master/skinparts/skinparts-MetrixHD-HD75hdPack/gEPG-XL/gEPG-XL.png" />
+	</info>
+
+	<files type="package"> <!-- without version, without .ipk -->
+		<file type="package" name="enigma2-skinparts-MetrixHD-HD75hdPack" />
+	</files>
+</default>
