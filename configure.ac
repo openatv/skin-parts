@@ -8,6 +8,7 @@ Makefile
 skinparts/Makefile
 skinparts/skinparts-MetrixHD-HD75hdPack/gEPG-XL/Makefile
 skinparts/skinparts-MetrixHD-HD75hdPack/Makefile
+skinparts/skinparts-MetrixHD-HD75hdPack/meta/Makefile
 skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBlike_FHD/Makefile
 skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBlike_HD/fonts/Makefile
 skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Makefile
@@ -16,4 +17,5 @@ skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBl
 skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBlike_HD/Makefile
 skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBlike_HD/preview/Makefile
 skinparts/skinparts-universal-FischreiherInfobars/Makefile
+skinparts/skinparts-universal-FischreiherInfobars/meta/Makefile
 ])

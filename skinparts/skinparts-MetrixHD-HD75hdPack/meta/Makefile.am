@@ -1,3 +1,3 @@
 installdir = $(datadir)/meta/
 
-dist_install_DATA = skin_holo-light.xml
+dist_install_DATA = skinparts-MetrixHD-HD75hdPack.xml
