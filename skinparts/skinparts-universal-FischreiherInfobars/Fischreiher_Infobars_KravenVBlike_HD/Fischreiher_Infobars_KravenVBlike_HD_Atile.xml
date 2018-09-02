@@ -250,6 +250,16 @@
 
 <!-- ============================================================================================================================== -->
 
+  <!-- SpecialJump SpecialJumpInfoBarCuts -->
+<!-- cf#_#rename -->
+  <screen name="SpecialJump_SpecialJumpInfoBarCuts" title="SpecialJump SpecialJumpInfoBarCuts" position="0,663" size="1111,47" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
+    <widget backgroundColor="black" foregroundColor="#00F8CA8C" font="KravenVBRegular;24" halign="center" name="SJJumpTime" position="540,11" size="200,36" transparent="0" zPosition="9" />
+
+    <widget name="Timeline" position="30,0" size="1080,10" backgroundColor="#181818" pointer="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_red_dot.png:4,0" foregroundColor="blue" />
+  </screen>
+
+<!-- ============================================================================================================================== -->
+
   <!-- MOD - from https://github.com/oe-alliance/oe-alliance-e2-skindefault/blob/master/skin_default.xml#L2078 -->
 <!-- cf#_#rename -->
   <screen name="PVRState" position="604,682" zPosition="1" size="72,24" backgroundColor="transparent" flags="wfNoBorder" transparent="0">

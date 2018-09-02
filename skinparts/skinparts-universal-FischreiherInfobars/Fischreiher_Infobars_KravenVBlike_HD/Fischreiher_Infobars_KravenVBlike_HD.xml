@@ -76,6 +76,18 @@
 		<panel name="Fisch_SpecialJump_SpecialJumpInfoBar"/>
   </screen>
 
+<!-- ============================================================================================================================== -->
+
+  <!-- SpecialJump InfoBarCuts -->
+  <screen name="SpecialJump_SpecialJumpInfoBarCuts" title="SpecialJump InfoBar" position="273,674" size="755,36" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
+<!--
+		#description#SpecialJump InfoBarCuts
+		#description#SpecialJump InfoBarCuts
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Fischreiher_Infobars_KravenVBlike_HD_SpecialJumpInfoBarCuts.png
+/-->
+		<panel name="Fisch_SpecialJump_SpecialJumpInfoBarCuts"/>
+  </screen>
+
 
 <!-- ============================================================================================================================== -->
 <!-- ==== HD section                                                                                                            === -->
@@ -306,6 +318,16 @@
     <widget source="Service" render="Label" font="Regular;30" foregroundColor="#00F8CA8C" halign="left" position="430,671" size="657,36" backgroundColor="black" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
+  </screen>
+
+<!-- ============================================================================================================================== -->
+
+  <!-- SpecialJump SpecialJumpInfoBarCuts -->
+<!-- cf#_#rename -->
+  <screen name="Fisch_SpecialJump_SpecialJumpInfoBarCuts" title="SpecialJump SpecialJumpInfoBarCuts" position="0,663" size="1111,47" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">#hide#
+    <widget backgroundColor="black" foregroundColor="#00F8CA8C" font="Regular;24" halign="center" name="SJJumpTime" position="540,11" size="200,36" transparent="0" zPosition="9" />
+
+    <widget name="Timeline" position="30,0" size="1080,10" backgroundColor="#181818" pointer="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_HD/Fisch_red_dot.png:4,0" foregroundColor="blue" />
   </screen>
 
 <!-- ============================================================================================================================== -->
@@ -593,6 +615,16 @@
     <widget source="Service" render="Label" font="Regular;45" foregroundColor="#00F8CA8C" halign="left" position="645,1007" size="986,54" backgroundColor="black" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
+  </screen>
+
+<!-- ============================================================================================================================== -->
+
+  <!-- SpecialJump SpecialJumpInfoBarCuts -->
+<!-- cf#_#rename -->
+  <screen name="Fisch_SpecialJump_SpecialJumpInfoBarCuts#_FHDscreen" title="SpecialJump SpecialJumpInfoBarCuts" position="0,995" size="1667,71" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">#hide#
+    <widget backgroundColor="black" foregroundColor="#00F8CA8C" font="Regular;36" halign="center" name="SJJumpTime" position="810,17" size="300,54" transparent="0" zPosition="9" />
+
+    <widget name="Timeline" position="45,0" size="1620,15" backgroundColor="#181818" pointer="skinparts/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Fisch_red_dot.png:4,0" foregroundColor="blue" />
   </screen>
 
 <!-- ============================================================================================================================== -->

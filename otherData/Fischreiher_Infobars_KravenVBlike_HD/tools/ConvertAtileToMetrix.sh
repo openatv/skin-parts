@@ -1,9 +1,9 @@
 #!/bin/sh
 
-file_Atile_HD=../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_HD_Atile.xml
-file_Metrix_HD=../../../skinparts/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_HD.xml
+file_Atile_HD=../../../skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_HD_Atile.xml
+file_Metrix_HD=../../../skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBlike_HD/Fischreiher_Infobars_KravenVBlike_HD.xml
 file_Metrix_header=../../../otherData/Fischreiher_Infobars_KravenVBlike_HD/building_blocks/Fischreiher_Infobars_KravenVBlike_HD.xml.header
-file_Metrix_FHD=../../../skinparts/Fischreiher_Infobars_KravenVBlike_FHD/Fischreiher_Infobars_KravenVBlike_FHD.xml
+file_Metrix_FHD=../../../skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBlike_FHD/Fischreiher_Infobars_KravenVBlike_FHD.xml
 
 cat $file_Atile_HD \
 \

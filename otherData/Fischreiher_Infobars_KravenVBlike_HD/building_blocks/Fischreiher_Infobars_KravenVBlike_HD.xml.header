@@ -74,3 +74,15 @@
 		<panel name="Fisch_SpecialJump_SpecialJumpInfoBar"/>
   </screen>
 
+<!-- ============================================================================================================================== -->
+
+  <!-- SpecialJump InfoBarCuts -->
+  <screen name="SpecialJump_SpecialJumpInfoBarCuts" title="SpecialJump InfoBar" position="273,674" size="755,36" backgroundColor="black" flags="wfNoBorder" zPosition="9" transparent="0">
+<!--
+		#description#SpecialJump InfoBarCuts
+		#description#SpecialJump InfoBarCuts
+		#previewfile#../Fischreiher_Infobars_KravenVBlike_HD/preview/Fischreiher_Infobars_KravenVBlike_HD_SpecialJumpInfoBarCuts.png
+/-->
+		<panel name="Fisch_SpecialJump_SpecialJumpInfoBarCuts"/>
+  </screen>
+
