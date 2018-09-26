@@ -63,10 +63,10 @@ The magic behind it:
 --------------------
 
 For MetrixHD, MyMetrixLite creates symblic links per file:
-    /usr/share/enigma2/MetrixHD/skinparts/SKINPARTS_NAME/(file) -> ../../skinparts/SKINPARTS_NAME/(file)
+    /usr/share/enigma2/MetrixHD/skinparts/SKINPARTS_NAME/(file) -> ../../skinparts/skinpack-name/SKINPARTS_NAME/(file)
 
 For other skins, AtileHD creates symblic links:
-    /usr/share/enigma2/SKIN_NAME/skinparts -> ../../skinparts
-    /usr/share/enigma2/SKIN_NAME/allScreens/skin_SKINPARTS_NAME.xml -> ../../skinparts/SKINPARTS_NAME/SKINPARTS_NAME_Atile.xml
+    /usr/share/enigma2/SKIN_NAME/skinparts/SKINPARTS_NAME -> ../../skinparts/skinpack-name/SKINPARTS_NAME
+    /usr/share/enigma2/SKIN_NAME/allScreens/skin_SKINPARTS_NAME.xml -> ../../skinparts/skinpack-name/SKINPARTS_NAME/SKINPARTS_NAME_Atile.xml
 
 
