@@ -38,6 +38,13 @@ skinparts for other skins (with AtileHD support):
     - please make sure not to re-define colors or fonts used in any skins
     - don't specify the resolution: this would affect screens of the main skin
 
+for the build process:
+    - all Makefile.am are auto-generated (just execute makegen.py)
+    - configure.ac    is  auto-generated (just execute makegen.py)
+    - each skin "pack" requires
+        skinparts/SKINPACK-NAME/meta/SKINPACK-NAME.xml
+        skinparts/SKINPACK-NAME/CONTROL/control
+      which can easily be copied from existing skinpacks and modified
 
 ----------------
 Using skinparts:
