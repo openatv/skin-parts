@@ -1,0 +1,10 @@
+<!-- cf#_#begin -->
+<!-- HD75hd 13.02.16 -->
+<skin>
+	<screen name="CLOCKWIDGET">
+		<eLabel backgroundColor="layer-b-background" position="1170,523" size="110,41" transparent="0" zPosition="-1"/>
+		<widget source="global.CurrentTime" render="Label" position="1170,528" size="110,41" font="global_clock; 40" halign="center" valign="bottom" backgroundColor="layer-b-background" foregroundColor="layer-b-clock-foreground" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+	</screen>
+</skin>

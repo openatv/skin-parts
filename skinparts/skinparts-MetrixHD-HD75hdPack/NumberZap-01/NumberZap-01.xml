@@ -1,0 +1,11 @@
+<!-- cf#_#begin -->
+<skin>
+	<screen name="NumberZap" position="center,center" size="270,120" title="QuickZap" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel name="a" position="10,5" size="150,70" backgroundColor="layer-a-background" zPosition="-10" />
+		<eLabel name="b" position="160,10" size="100,60" backgroundColor="layer-b-background" zPosition="-10" />
+		<eLabel name="c" position="0,80" size="270,40" backgroundColor="layer-a-background" zPosition="-10" />
+		<widget name="channel" position="10,20" size="150,40" font="screen_info;30" halign="center" valign="bottom" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" />
+		<widget name="number" position="160,26" size="100,40" halign="center" valign="bottom" font="screen_info;40" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" />
+		<widget name="servicename" position="5,80" size="260,40" halign="center" valign="center" font="screen_info;25" transparent="1" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" />
+	</screen>
+</skin>

@@ -1,0 +1,36 @@
+<!-- 30.06.2017 Hd75hd -->
+<!-- cf#_#begin -->
+<skin>
+	<screen name="SKINPART_infobar">
+		<widget source="global.CurrentTime" render="Label" position="1168,528" size="100,41" font="global_clock; 40" halign="right" valign="bottom" backgroundColor="layer-b-background" foregroundColor="layer-b-clock-foreground" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1090,522" size="80,21" font="global_clock; 16" halign="right" backgroundColor="layer-b-background" foregroundColor="infobarfont2" transparent="1">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1090,540" size="80,21" font="global_clock; 16" halign="right" backgroundColor="layer-b-background" foregroundColor="infobarfont2" transparent="1">
+			<convert type="ClockToText">Format:%e. %b.</convert>
+		</widget>
+		<eLabel backgroundColor="infobarbackground" position="0,523" size="1280,41" transparent="0" zPosition="-1"/>
+		<eLabel backgroundColor="layer-b-background" position="0,564" size="1280,1" transparent="0" zPosition="-1"/>
+		<widget backgroundColor="infobarbackground" foregroundColor="infobarfont1" font="global_small; 19" noWrap="1" position="0,531" render="Label" size="280,25" source="session.CurrentService" transparent="1" halign="center">
+			<convert type="MetrixHDExtServiceInfo">ServiceNumberAndName</convert>
+		</widget>
+	</screen>
+	<screen name="SKINPART_secondinfobar">
+		<widget source="global.CurrentTime" render="Label" position="1168,528" size="100,41" font="global_clock; 40" halign="right" valign="bottom" backgroundColor="layer-b-background" foregroundColor="layer-b-clock-foreground" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1090,522" size="80,21" font="global_clock; 16" halign="right" backgroundColor="layer-b-background" foregroundColor="infobarfont2" transparent="1">
+			<convert type="ClockToText">Format:%A</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1090,540" size="80,21" font="global_clock; 16" halign="right" backgroundColor="layer-b-background" foregroundColor="infobarfont2" transparent="1">
+			<convert type="ClockToText">Format:%e. %b.</convert>
+		</widget>
+		<eLabel backgroundColor="infobarbackground" position="0,523" size="1280,41" transparent="0" zPosition="-1"/>
+		<eLabel backgroundColor="layer-b-background" position="0,564" size="1280,1" transparent="0" zPosition="-1"/>
+		<widget backgroundColor="infobarbackground" foregroundColor="infobarfont1" font="global_small; 19" noWrap="1" position="0,531" render="Label" size="280,25" source="session.CurrentService" transparent="1" halign="center">
+			<convert type="MetrixHDExtServiceInfo">ServiceNumberAndName</convert>
+		</widget>
+	</screen>
+</skin>
