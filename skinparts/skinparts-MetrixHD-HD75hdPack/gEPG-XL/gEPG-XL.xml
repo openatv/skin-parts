@@ -4,8 +4,8 @@
 <!-- cf#_#rename -->
 	<screen name="GraphicalEPG_1">
 		<eLabel text="Electronic Program Guide" position="58,36" size="800,50" valign="bottom" font="global_title;34" backgroundColor="epg-background" foregroundColor="layer-a-title-foreground" transparent="1" />
-		<ePixmap position="584,46" size="36,36" zPosition="10" pixmap="MetrixHD/left.png" alphatest="on" />
-		<ePixmap position="980,46" size="36,36" zPosition="10" pixmap="MetrixHD/right.png" alphatest="on" />
+		<ePixmap position="534,46" size="36,36" zPosition="10" pixmap="MetrixHD/left.png" alphatest="on" />
+		<ePixmap position="940,46" size="36,36" zPosition="10" pixmap="MetrixHD/right.png" alphatest="on" />
 		<widget source="Title" render="Label" position="600,36" foregroundColor="epg-timeline-foreground" size="400,50" noWrap="1" halign="center" valign="bottom" font="global_title;34" backgroundColor="epg-background" transparent="1" />
 		<widget name="lab1" position="60,275" size="1160,35" font="screen_text;24" halign="center" valign="center" zPosition="20" backgroundColor="epg-background" foregroundColor="layer-a-foreground" transparent="1" />
 		<eLabel name="timeline_background" position="60,102" size="1160,30" backgroundColor="epg-timeline-background" transparent="0" />
@@ -25,8 +25,8 @@
 <!-- cf#_#rename -->
 	<screen name="GraphicalEPG_1#_FHDscreen">
 		<eLabel text="Electronic Program Guide" position="87,54" size="1200,75" valign="bottom" font="global_title;51" backgroundColor="epg-background" foregroundColor="layer-a-title-foreground" transparent="1" />
-		<ePixmap position="876,69" size="54,54" zPosition="10" pixmap="MetrixHD/FHD/left.png" alphatest="on" />
-		<ePixmap position="1470,69" size="54,54" zPosition="10" pixmap="MetrixHD/FHD/right.png" alphatest="on" />
+		<ePixmap position="801,69" size="54,54" zPosition="10" pixmap="MetrixHD/FHD/left.png" alphatest="on" />
+		<ePixmap position="1410,69" size="54,54" zPosition="10" pixmap="MetrixHD/FHD/right.png" alphatest="on" />
 		<widget source="Title" render="Label" position="900,54" foregroundColor="epg-timeline-foreground" size="600,75" noWrap="1" halign="center" valign="bottom" font="global_title;51" backgroundColor="epg-background" transparent="1" />
 		<widget name="lab1" position="90,413" size="1740,53" font="screen_text;36" halign="center" valign="center" zPosition="20" backgroundColor="epg-background" foregroundColor="layer-a-foreground" transparent="1" />
 		<eLabel name="timeline_background" position="90,153" size="1740,45" backgroundColor="epg-timeline-background" transparent="0" />

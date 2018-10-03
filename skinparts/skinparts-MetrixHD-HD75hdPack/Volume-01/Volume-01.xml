@@ -1,0 +1,14 @@
+<!-- cf#_#begin -->
+<!-- change volume screen - hd75hd -->
+<skin>
+	<screen name="Volume" position="580,40" size="120,71" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
+		<widget font="screen_info;45" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" halign="center" valign="bottom" render="MetrixHDVolumeText" source="global.CurrentTime" position="18,14" size="85,50" zPosition="20" transparent="1" />
+		<eLabel position="1,1" size="118,69" backgroundColor="layer-a-background" zPosition="-1" transparent="0" />
+		<eLabel position="0,0" size="120,71" backgroundColor="layer-b-background" zPosition="-2" transparent="0" />
+	</screen>
+	<screen name="Mute" position="604,40" size="71,71" title="Mute" zPosition="11" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel position="0,0" size="71,71" zPosition="0" backgroundColor="layer-b-background" transparent="0" />
+		<eLabel position="1,1" size="69,69" zPosition="1" backgroundColor="layer-a-background" />
+		<ePixmap position="3,3" size="64,64" zPosition="2" pixmap="MetrixHD/icons/mute.png" transparent="1" alphatest="blend" />
+	</screen>
+</skin>

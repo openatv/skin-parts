@@ -1,0 +1,44 @@
+<!-- 04.03.2018 Kanalliste mit mehr Infos auf der rechten Seite und Begrenzungslinien -->
+<!-- cf#_#begin -->
+<skin>
+	<!-- CHANNELSELECTION 1 FOCUS LEFT NO PICON 5 NEXT EVENTS */ + Primetime-->
+	<screen name="CHANNELSELECTION-1P">
+		<eLabel text="Channel selection" position="5,535" size="1280,200" font="global_large_screen; 100" noWrap="0" backgroundColor="text-background" transparent="1" foregroundColor="background-text" valign="bottom" zPosition="-50" />
+		<widget source="Title" render="Label" position="58,36" size="550,50" valign="bottom" font="global_title;34" noWrap="1" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="list" position="70,95" size="700,510" scrollbarMode="showNever" fieldMargins="10" itemsDistances="5" progressbarHeight="10" progressBarWidth="80" progressbarBorderWidth="1" colorServiceRecorded="layer-a-channelselection-foreground-colorServiceRecorded" colorServicePseudoRecorded="layer-a-channelselection-foreground-colorServicePseudoRecorded" colorServiceStreamed="layer-a-channelselection-foreground-colorServiceStreamed" colorServiceDescription="layer-a-channelselection-foreground-ServiceDescription" colorServiceDescriptionSelected="layer-a-channelselection-foreground-ServiceDescriptionSelected" colorEventProgressbarBorder="layer-a-selection-background" colorEventProgressbarBorderSelected="layer-a-channelselection-foregroundColorSelected" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceNumberFont="epg_event;22" serviceNameFont="epg_event;22" serviceInfoFont="epg_info;20" transparent="0" backgroundColor="layer-a-background" foregroundColor="layer-a-channelselection-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-channelselection-foregroundColorSelected" />
+				<widget source="ServiceEvent" render="Label" position="70,606" size="700,20" font="screen_text; 16" backgroundColor="layer-a-background" foregroundColor="layer-a-accent2" halign="center" transparent="1" >
+			<convert type="ServiceName2">%P   (%T)</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="820,56" size="395,65" font="epg_event; 24" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="0" halign="center" valign="center">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget alphatest="blend" position="992,36" render="MetrixHDXPicon" size="50,30" source="ServiceEvent" transparent="0" zPosition="1">
+			<convert type="MetrixHDRefString">ServicelistRef</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="843,113" size="64,24" font="epg_event; 21" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="0" halign="right" valign="bottom" >
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="1128,113" size="77,24" font="epg_event; 21" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="0" valign="bottom" >
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<eLabel position="914,125" size="206,1" backgroundColor="layer-b-accent1" />
+		<widget source="ServiceEvent" render="Progress" position="914,123" size="206,5" foregroundColor="layer-b-progress" transparent="1" zPosition="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<eLabel position="805,136" size="425,1" backgroundColor="layer-b-accent1" />
+		<!-- <eLabel position="825,136" size="385,1" backgroundColor="layer-b-accent1" /> -->
+		<widget source="ServiceEvent" render="MetrixHDRunningText" options="movetype=running,startdelay=3000,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="825,140" size="385,290" font="epg_info; 19" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" transparent="0" halign="left" valign="center">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<eLabel position="805,433" size="425,1" backgroundColor="layer-b-accent1" />
+		<widget source="ServiceEvent" render="MetrixHDSingleEpgList" position="825,438" size="385,150" font="epg_info; 19" backgroundColor="layer-b-background" foregroundColor="layer-b-accent1" noWrap="1" transparent="0" />
+		<eLabel position="805,592" size="425,1" backgroundColor="layer-b-accent1" />
+		<widget source="ServiceEvent" render="MetrixHDPrimeTime" position="825,595" size="385,30" font="epg_info;19" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" noWrap="1" transparent="0" />
+		<panel name="template1_2layer" />
+		<panel name="rgyb-buttons_template1" />
+		<panel name="rgyb-keys_template1" />
+		<panel name="ime-buttons_template1" />
+	</screen>
+</skin>
