@@ -1,7 +1,7 @@
 <!-- cf#_#begin -->
-<!-- hd75hd 06.05.2018 -->
+<!-- hd75hd 28.07.2019 -->
 <skin>
-	<screen name="SlimChannelSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ChannelSelection_PIG" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Channel selection" position="5,535" size="1280,200" font="global_large_screen; 100" noWrap="0" backgroundColor="text-background" transparent="1" foregroundColor="background-text" valign="bottom" zPosition="-50" />
 		<widget source="Title" render="Label" position="58,36" size="525,50" valign="bottom" font="global_title;34" noWrap="1" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
 		<widget source="session.VideoPicture" render="Pig" position="760,95" size="371,210" zPosition="3" backgroundColor="unff000000" />
@@ -23,13 +23,13 @@
 		<widget source="ServiceEvent" render="MetrixHDSingleEpgList" position="685,522" size="520,78" font="epg_info; 19" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" noWrap="1" zPosition="2" transparent="0" />
 		<eLabel position="685,600" size="520,1" backgroundColor="layer-b-accent1" zPosition="3" />
 		<widget source="ServiceEvent" render="MetrixHDPrimeTime" position="685,602" size="520,30" font="epg_text;19" zPosition="2" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" noWrap="1" transparent="1" />
-		<widget alphatest="blend" position="400,43" render="MetrixHDXPicon" size="50,30" source="ServiceEvent" transparent="0" zPosition="1">
+		<widget alphatest="blend" position="420,43" render="MetrixHDXPicon" size="50,30" source="ServiceEvent" transparent="0" zPosition="1">
 			<convert type="MetrixHDRefString">ServicelistRef</convert>
 		</widget>
-		<widget alphatest="blend" position="940,43" render="MetrixHDXPicon" size="50,30" source="ServiceEvent" transparent="0" zPosition="1">
+		<widget alphatest="blend" position="970,43" render="MetrixHDXPicon" size="50,30" source="ServiceEvent" transparent="0" zPosition="1">
 			<convert type="MetrixHDRefString">ServicelistRef</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="450,43" size="490,30" font="screen_text; 16" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" halign="center" valign="center" transparent="1" zPosition="1">
+		<widget source="ServiceEvent" render="Label" position="470,43" size="500,30" font="screen_text; 16" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" halign="center" valign="center" transparent="1" zPosition="1">
 			<convert type="ServiceName2">%P   (%T)</convert>
 		</widget>
 		<panel name="template1_1layer" />
