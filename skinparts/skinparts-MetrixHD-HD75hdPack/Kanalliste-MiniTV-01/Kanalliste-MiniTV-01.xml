@@ -1,7 +1,7 @@
 <!-- cf#_#begin -->
-<!-- hd75hd 11.12.2016 -->
+<!-- hd75hd 21.08.2020 -->
 <skin>
-	<screen name="SlimChannelSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ChannelSelection_PIG" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Channel selection" position="5,535" size="1280,200" font="global_large_screen; 100" noWrap="0" backgroundColor="text-background" transparent="1" foregroundColor="background-text" valign="bottom" zPosition="-50" />
 		<widget source="Title" render="Label" position="58,36" size="525,50" valign="bottom" font="global_title;34" noWrap="1" foregroundColor="layer-a-title-foreground" backgroundColor="layer-a-background" transparent="1" />
 		<widget source="session.VideoPicture" render="Pig" position="760,95" size="371,210" zPosition="3" backgroundColor="unff000000" />
