@@ -16,6 +16,10 @@ skinparts/skinparts-MetrixHD-HD75hdPack/Kanalliste-MiniTV-02/Makefile
 skinparts/skinparts-MetrixHD-HD75hdPack/Makefile
 skinparts/skinparts-MetrixHD-HD75hdPack/meta/Makefile
 skinparts/skinparts-MetrixHD-HD75hdPack/NumberZap-01/Makefile
+skinparts/skinparts-universal-4l3x2k/infobar-weather-extended/fonts/Makefile
+skinparts/skinparts-universal-4l3x2k/infobar-weather-extended/Makefile
+skinparts/skinparts-universal-4l3x2k/Makefile
+skinparts/skinparts-universal-4l3x2k/meta/Makefile
 skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBlike_FHD/Makefile
 skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBlike_HD/fonts/Makefile
 skinparts/skinparts-universal-FischreiherInfobars/Fischreiher_Infobars_KravenVBlike_HD/icons_FHD/Makefile

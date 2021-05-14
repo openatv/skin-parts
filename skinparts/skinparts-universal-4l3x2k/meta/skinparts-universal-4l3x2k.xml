@@ -1,0 +1,17 @@
+<default>
+	<prerequisites>
+		<tag type="Skin" />
+	</prerequisites>
+	<info>
+		<author>www.opena.tv 4l3x2k</author>
+		<name>4l3x2kMetrixHDWeatherExtended</name>
+		<packagename>enigma2-skinparts-universal-4l3x2k</packagename>
+		<shortdescription>Weather extended</shortdescription>
+		<description>Skinparts pack: 4l3x2k MetrixHD Weather Extended</description>
+		<screenshot src="https://github.com/openatv/skin-parts/blob/master/skinparts/skinparts-universal-4l3x2k/infobar-weather-extended/infobar-weather-extended.png" />
+	</info>
+
+	<files type="package"> <!-- without version, without .ipk -->
+		<file type="package" name="enigma2-skinparts-universal-4l3x2k" />
+	</files>
+</default>
