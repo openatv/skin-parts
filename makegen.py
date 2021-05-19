@@ -18,6 +18,7 @@ else:
 
 MY_EXTENSIONS = {".xml": "0", ".gif": "0", ".jpg": "0", ".png": "0", ".conf": "0", ".ttf": "0", ".svg": "0"}
 
+
 def makegen(path, top, meta):
     print path, top
     extensions = MY_EXTENSIONS.copy()
@@ -71,6 +72,7 @@ def makegen(path, top, meta):
         else:
             makegen(os.path.join(path, d), 0, 0)
         
+
 makegen(".", 1, 0)
 
 fc = open('./configure.ac', 'w+')
