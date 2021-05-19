@@ -16,9 +16,9 @@ else:
     MY_BOX_DIR = 'skinparts'
     MY_HEADER = "AC_INIT([skin-parts],4.3.0,[https://github.com/openatv/skin-parts/issues])\n"
 
-MY_EXTENSIONS = {".xml":"0", ".gif":"0", ".jpg":"0", ".png":"0", ".conf":"0", ".ttf":"0", ".svg":"0"}
+MY_EXTENSIONS = {".xml": "0", ".gif": "0", ".jpg": "0", ".png": "0", ".conf": "0", ".ttf": "0", ".svg": "0"}
 
-def makegen(path,top,meta):
+def makegen(path, top, meta):
     print path, top
     extensions = MY_EXTENSIONS.copy()
     dirs = []
@@ -67,11 +67,11 @@ def makegen(path,top,meta):
     fm.close()
     for d in dirs:
         if (d == 'meta'):
-            makegen(os.path.join(path, d),0,1)
+            makegen(os.path.join(path, d), 0, 1)
         else:
-            makegen(os.path.join(path, d),0,0)
+            makegen(os.path.join(path, d), 0, 0)
         
-makegen(".",1,0)
+makegen(".", 1, 0)
 
 fc = open('./configure.ac', 'w+')
 fc.write(MY_HEADER)
