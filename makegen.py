@@ -71,7 +71,7 @@ def makegen(path, top, meta):
             makegen(os.path.join(path, d), 0, 1)
         else:
             makegen(os.path.join(path, d), 0, 0)
-        
+
 
 makegen(".", 1, 0)
 
